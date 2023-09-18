@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SunopsisExport>
+<Admin RepositoryVersion="05.02.02.09" IsLegacyIdCompatible="false" />
+<Encryption algorithm="AES" keyLength="128" exportKeyHash="hU4S5IyhJb1qm86zIE83Q8sblUqj7+bdViCMP10rhu0=" keyVect="ni0j4mOlLlhCKiU+UNho6A==" exportKeySalt="0696ec01-e7aa-42af-928f-672bbcd5a0ed" containsCipherText="false"/>
+<Object class="com.sunopsis.dwg.dbobj.SnpKmTemplate">
+		<Field name="FirstDate" type="java.sql.Timestamp"><![CDATA[2021-08-27 16:25:16.0]]></Field>
+	<Field name="FirstUser" type="java.lang.String"><![CDATA[SUNOPSIS_INSTALL]]></Field>
+	<Field name="GlobalId" type="java.lang.String"><![CDATA[fa46ec9e-2d00-11e6-942d-00163e1ffd72]]></Field>
+	<Field name="IndChange" type="java.lang.String"><![CDATA[U]]></Field>
+	<Field name="IndIsSeeded" type="java.lang.String"><![CDATA[1]]></Field>
+	<Field name="IndLangTrans" type="java.lang.String"><![CDATA[1]]></Field>
+	<Field name="IndReplNl" type="java.lang.String"><![CDATA[1]]></Field>
+	<Field name="IntVersion" type="com.sunopsis.sql.DbInt"><![CDATA[2]]></Field>
+	<Field name="IKmTemplate" type="com.sunopsis.sql.DbInt"><![CDATA[117]]></Field>
+	<Field name="LangName" type="java.lang.String"><![CDATA[PYTHON]]></Field>
+	<Field name="LastDate" type="java.sql.Timestamp"><![CDATA[2021-08-27 16:25:18.0]]></Field>
+	<Field name="LastUser" type="java.lang.String"><![CDATA[SUNOPSIS_INSTALL]]></Field>
+	<Field name="Name" type="java.lang.String"><![CDATA[SparkLookupCmd]]></Field>
+	<Field name="TechnoName" type="java.lang.String"><![CDATA[SPARK_PYTHON]]></Field>
+	<Field name="TemplateText" type="java.lang.String"><![CDATA[
+{# IF ($[USE_DATAFRAMES] == 'true') #}
+{# INCLUDE = 'SparkLookupCmdDF' #}
+{# ELSE #}
+{# IF ($[STREAMING_MODE] == 'true') #}
+{# INCLUDE = 'SparkLookupCmdStreaming' #}
+{# ELSE #}
+{# IF ($[CACHE_BASED_ON_KEYS] == 'true' )#}
+driverKeys = set( $[DRIVER_ALIAS].map(lambda $[DRIVER_ALIAS]:$[DRIVER_KEY]).collect())
+$[LOOKUP_ALIAS] = loadLookupSource(sc, driverKeys)
+{# ENDIF #}
+lookupSource = $[LOOKUP_ALIAS]
+lookupDriver = $[DRIVER_ALIAS]
+{# IF ($[NO_MATCH] == 'DEFAULT_VALUES') #}
+def defaultValue$[LOOKUP_POSTFIX]($[LOOKUP_RDD_SHAPE]): return $[DEFAULT_VALUE_CREATION]
+{# ENDIF #}
+{# IF ($[SIMPLE_EQUL_LOOKUP] == 'true') #}
+lookupDriver = lookupDriver.keyBy(lambda $[DRIVER_RDD_SHAPE]: {# IF ($[SIMPLE_EQUL_LOOKUP] == 'true') #}$[DRIVER_KEY]{# ELSE #}None{# ENDIF #})
+{# IF ($[SPARK_STREAMING_DEBUG] == 'true') #}
+print("========= %s   : lookupDriver keyBy =========" % type(lookupDriver).__name__)
+for line in lookupDriver.collect():
+    print line
+{# ENDIF #}
+lookupSource = lookupSource.keyBy(lambda $[LOOKUP_RDD_SHAPE]: {# IF ($[SIMPLE_EQUL_LOOKUP] == 'true') #}$[LOOKUP_KEY]{# ELSE #}None{# ENDIF #})
+{# IF ($[SPARK_STREAMING_DEBUG] == 'true') #}
+print("========= %s   : lookupSource keyBy =========" % type(lookupSource).__name__)
+for line in lookupSource.collect():
+    print line
+{# ENDIF #}
+{# ENDIF #}
+{# IF ($[IS_MAP_SIDE] == 'true') #}
+lookupVariable$[LOOKUP_POSTFIX] = lookupSource.{# IF ($[SIMPLE_EQUL_LOOKUP] == 'true') #}groupByKey().collectAsMap(){# ELSE #}collect(){# ENDIF #}
+{# IF ($[SPARK_STREAMING_DEBUG] == 'true') #}
+print("========= %s   : lookupVariable$[LOOKUP_POSTFIX] =========" % type(lookupVariable$[LOOKUP_POSTFIX]).__name__)
+if type(lookupVariable$[LOOKUP_POSTFIX]).__name__ == 'dict' :
+  for k,v in lookupVariable$[LOOKUP_POSTFIX].iteritems() :
+    print k
+    for line in v:
+      print line
+else :
+  for v in lookupVariable$[LOOKUP_POSTFIX] :
+    print v
+{# ENDIF #}
+lookupVariable$[LOOKUP_POSTFIX] = sc.broadcast(lookupVariable$[LOOKUP_POSTFIX])
+def joinFunc$[LOOKUP_POSTFIX](iterator):
+  lookupMap = lookupVariable$[LOOKUP_POSTFIX].value
+  for elem in iterator:
+{# IF ($[SIMPLE_EQUL_LOOKUP] == 'true') #}
+{# IF ($[NO_MATCH] == 'NO_ROW') #}
+    yield (elem[1], lookupMap.get(elem[0]).data if  lookupMap.has_key(elem[0]) else [])
+{# ELSE #}
+    yield (elem[1], lookupMap.get(elem[0]).data if  lookupMap.has_key(elem[0]) else [defaultValue$[LOOKUP_POSTFIX](elem[1])])
+{# ENDIF #}
+{# ELSE #}
+    $[DRIVER_RDD_SHAPE] = elem
+    matchedLines = filter(lambda $[LOOKUP_RDD_SHAPE] : safeExpr(lambda : $[LOOKUP_COND] , False), lookupMap)
+{# IF ($[NO_MATCH] == 'NO_ROW') #}
+    yield (elem, matchedLines if len(matchedLines) > 0 else [])
+{# ELSE #}
+    yield (elem, matchedLines if len(matchedLines) > 0 else [defaultValue$[LOOKUP_POSTFIX](elem)])
+{# ENDIF #}
+{# ENDIF #}
+lookupResult = lookupDriver.mapPartitions(joinFunc$[LOOKUP_POSTFIX]){# IF ($[NTHROW] == '-1') #}.flatMapValues(lambda l : l){# ENDIF #}
+{# ELSE #}
+{# IF ($[SIMPLE_EQUL_LOOKUP] == 'true') #}
+{# IF ($[NO_MATCH] == 'NO_ROW') #}
+lookupResult = lookupDriver.join(lookupSource{# IF ($[LEVEL_PARALLELISM] > '0') #}, $[LEVEL_PARALLELISM]{# ENDIF #}).mapValues(lambda line: (line[0],line[1])).map(lambda line: line[1])
+{# ELSE #}
+leftOuterJoinResult = lookupDriver.leftOuterJoin(lookupSource{# IF ($[LEVEL_PARALLELISM] > '0') #}, $[LEVEL_PARALLELISM]{# ENDIF #}).mapValues(lambda line: (line[0],line[1])).map(lambda line: line[1])
+{# IF ($[SPARK_STREAMING_DEBUG] == 'true') #}
+print("========= %s   : leftOuterJoinResult =========" % type(leftOuterJoinResult).__name__)
+for line in leftOuterJoinResult.collect():
+    print line
+{# ENDIF #}
+lookupResult = leftOuterJoinResult.map(lambda (d, l) : (d, l) if l != None else (d, defaultValue$[LOOKUP_POSTFIX](d)))
+{# ENDIF #}
+{# ELSE #}
+cartesianResult = lookupDriver.cartesian(lookupSource)
+leftOuterJoinResult = cartesianResult.filter(lambda ($[DRIVER_RDD_SHAPE],$[LOOKUP_RDD_SHAPE]): safeExpr(lambda : $[LOOKUP_COND], False))
+{# IF ($[NO_MATCH] == 'NO_ROW') #}
+lookupResult = leftOuterJoinResult
+{# ELSE #}
+subtrahend = leftOuterJoinResult.map(lambda line:line[0])
+defaultResult = lookupDriver.subtract(subtrahend).map(lambda line:(line, defaultValue$[LOOKUP_POSTFIX](line)))
+lookupResult = leftOuterJoinResult.union(defaultResult)
+{# ENDIF #}
+{# ENDIF #}
+{# ENDIF #}
+{# IF ($[NTHROW] != '-1') #}
+{# IF ($[IS_MAP_SIDE] == 'false') #}
+{# IF ($[SPARK_STREAMING_DEBUG] == 'true') #}
+print "========== lookupResult before groupBy ====================================="
+for line in lookupResult.collect() :
+  print line
+{# ENDIF #}
+lookupResult = lookupResult.groupByKey().map(lambda (l, v) : (l, list(v)))
+{# IF ($[SPARK_STREAMING_DEBUG] == 'true') #}
+print "========== lookupResult after groupByKey ====================================="
+for line in lookupResult.collect() :
+  print "=========="
+  print line[0]
+  print "=========="
+  for line_detail in line[1] :
+    print line_detail
+{# ENDIF #}
+{# IF ($[ERROR_WHEN_MULTIPLE_ROW] == 'true') #}
+def checkMultipleRows (v) :
+  if len(v) > 1 :
+    raise Exception('ODIKM-SPARK-LOOKUP-10000 : Multiple match rows fetched for one of the lookup keys. This exception is triggered because of your lookup component setting for Multiple Match Rows property as "Error : multiple rows will cause a mapping failure".')
+  return v;
+lookupResult = lookupResult.map(lambda (l, v) : (l, checkMultipleRows(v)))
+{# ENDIF #}
+{# IF ($[ANY_ROW] == 'false') #}
+def sortMultipleRows$[LOOKUP_POSTFIX] (lst) :
+  {# FOR ($[LOOKUP_RDD_SHAPES],$[ORDERBY_EXPRS],$[ORDERBY_TYPES_MAP_SIDE]) IN ($[LOOKUP_RDD_SHAPE_ONE],$[ORDERBY_EXPR],$[ORDERBY_TYPE]) SEP = '
+  ' #}lst = sorted(lst, key=lambda $[LOOKUP_RDD_SHAPE_ONE]:safeExpr(lambda:$[ORDERBY_EXPR],None), reverse=$[ORDERBY_TYPE]){# ENDFOR #}
+  return lst
+lookupResult = lookupResult.map(lambda (l, v) : (l, sortMultipleRows$[LOOKUP_POSTFIX](v) if len(v)>1 else v))
+{# IF ($[SPARK_STREAMING_DEBUG] == 'true') #}
+print "========== lookupResult after sort ====================================="
+for line in lookupResult.collect() :
+  print "=========="
+  print line[0]
+  print "=========="
+  for line_detail in line[1] :
+    print line_detail
+{# ENDIF #}
+{# ENDIF #}
+{# IF ($[RETURN_DEFAULT_IF_NTH_MISSING] == 'true') #}
+$[TGT_ALIAS] = lookupResult.map(lambda (l, v) : (l, defaultValue$[LOOKUP_POSTFIX](l)) if len(v)==0 else {# IF ($[NTHROW] == '0') #}(l,v[len(v)-1]){# ELSE #}(l,v[$[NTHROW]-1]) if len(v)>=$[NTHROW] else (l, defaultValue$[LOOKUP_POSTFIX](l)){# ENDIF #})
+{# ELSE #}
+$[TGT_ALIAS] = lookupResult.map(lambda (l, v) : (l, defaultValue$[LOOKUP_POSTFIX](l)) if len(v)==0 else (l,v[0]) if len(v)==1 else {# IF ($[NTHROW] == '0') #}(l,v[len(v)-1]){# ELSE #}(l,v[$[NTHROW]-1]) if len(v)>=$[NTHROW] else (l, defaultValue$[LOOKUP_POSTFIX](l)){# ENDIF #})
+{# ENDIF #}
+{# ELSE #}
+{# IF ($[ERROR_WHEN_MULTIPLE_ROW] == 'true') #}
+def checkMultipleRows (v) :
+  if len(v) > 1 :
+    raise Exception('ODIKM-SPARK-LOOKUP-10000 : Multiple match rows fetched for one of the lookup keys. This exception is triggered because of your lookup component setting for Multiple Match Rows property as "Error : multiple rows will cause a mapping failure".')
+  return v;
+lookupResult = lookupResult.map(lambda (l, v) : (l, checkMultipleRows(v)))
+{# ENDIF #}
+{# IF ($[ANY_ROW] == 'false') #}
+def sortMultipleRows$[LOOKUP_POSTFIX] (lst) :
+  {# FOR ($[LOOKUP_RDD_SHAPES],$[ORDERBY_EXPRS],$[ORDERBY_TYPES_MAP_SIDE]) IN ($[LOOKUP_RDD_SHAPE_ONE],$[ORDERBY_EXPR],$[ORDERBY_TYPE]) SEP = '
+  ' #}lst = sorted(lst, key=lambda $[LOOKUP_RDD_SHAPE_ONE]:safeExpr(lambda:$[ORDERBY_EXPR],None), reverse=$[ORDERBY_TYPE]){# ENDFOR #}
+  return lst
+lookupResult = lookupResult.map(lambda (l, v) : (l, sortMultipleRows$[LOOKUP_POSTFIX](v) if len(v)> 1 else v))
+{# ENDIF #}
+{# IF ($[RETURN_DEFAULT_IF_NTH_MISSING] == 'true') #}
+$[TGT_ALIAS] = lookupResult.map(lambda (l, v) : (l, defaultValue$[LOOKUP_POSTFIX](l)) if len(v)==0 else {# IF ($[NTHROW] == '0') #}(l,v[len(v)-1]){# ELSE #}(l,v[$[NTHROW]-1]) if len(v)>=$[NTHROW] else (l, defaultValue$[LOOKUP_POSTFIX](l)){# ENDIF #})
+{# ELSE #}
+$[TGT_ALIAS] = lookupResult.map(lambda (l, v) : (l, defaultValue$[LOOKUP_POSTFIX](l)) if len(v)==0 else (l,v[0]) if len(v)==1 else {# IF ($[NTHROW] == '0') #}(l,v[len(v)-1]){# ELSE #}(l,v[$[NTHROW]-1]) if len(v)>=$[NTHROW] else (l, defaultValue$[LOOKUP_POSTFIX](l)){# ENDIF #})
+{# ENDIF #}
+{# ENDIF #}
+{# ELSE #}
+$[TGT_ALIAS] = lookupResult
+{# ENDIF #}
+{# ENDIF #}
+{# INCLUDE = 'SparkPartitionRedistributeAndSort' #}
+{# ENDIF #}
+    ]]></Field>
+	<Field name="TemplateVersion" type="java.lang.String">null</Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpTemplateJoin">
+		<Field name="GlobalId" type="java.lang.String"><![CDATA[ffaca74a-9772-47f5-af4d-0f4b906782c7]]></Field>
+	<Field name="IKmTemplate" type="com.sunopsis.sql.DbInt"><![CDATA[117]]></Field>
+	<Field name="IKmTemplateRef" type="com.sunopsis.sql.DbInt"><![CDATA[118]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpTemplateJoin">
+		<Field name="GlobalId" type="java.lang.String"><![CDATA[9030a78b-b3b9-43c3-93c4-19cfe631a6e6]]></Field>
+	<Field name="IKmTemplate" type="com.sunopsis.sql.DbInt"><![CDATA[117]]></Field>
+	<Field name="IKmTemplateRef" type="com.sunopsis.sql.DbInt"><![CDATA[144]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpTemplateJoin">
+		<Field name="GlobalId" type="java.lang.String"><![CDATA[f4936da7-73d3-4a96-9613-8c191a1f0852]]></Field>
+	<Field name="IKmTemplate" type="com.sunopsis.sql.DbInt"><![CDATA[117]]></Field>
+	<Field name="IKmTemplateRef" type="com.sunopsis.sql.DbInt"><![CDATA[176]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpTemplateJoin">
+		<Field name="GlobalId" type="java.lang.String"><![CDATA[58e43dd3-bdc4-475c-9747-da1ff8b585b4]]></Field>
+	<Field name="IKmTemplate" type="com.sunopsis.sql.DbInt"><![CDATA[117]]></Field>
+	<Field name="IKmTemplateRef" type="com.sunopsis.sql.DbInt"><![CDATA[172]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpKmTemplateJoin">
+		<Field name="GlobalId" type="java.lang.String"><![CDATA[3037b89f-9a96-4ee9-b332-e78268470f5a]]></Field>
+	<Field name="ISnpKmTemplate" type="com.sunopsis.sql.DbInt"><![CDATA[117]]></Field>
+	<Field name="ISnpTrt" type="com.sunopsis.sql.DbInt"><![CDATA[148]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpKmTemplateJoin">
+		<Field name="GlobalId" type="java.lang.String"><![CDATA[40d03dfe-3f98-47e4-9b82-18badc1313c5]]></Field>
+	<Field name="ISnpKmTemplate" type="com.sunopsis.sql.DbInt"><![CDATA[117]]></Field>
+	<Field name="ISnpTrt" type="com.sunopsis.sql.DbInt"><![CDATA[150]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpKmTemplateJoin">
+		<Field name="GlobalId" type="java.lang.String"><![CDATA[ae1b11d6-9321-43be-82f5-5028193501d5]]></Field>
+	<Field name="ISnpKmTemplate" type="com.sunopsis.sql.DbInt"><![CDATA[117]]></Field>
+	<Field name="ISnpTrt" type="com.sunopsis.sql.DbInt"><![CDATA[165]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpKmTemplateJoin">
+		<Field name="GlobalId" type="java.lang.String"><![CDATA[46d5d69c-a72b-42be-a721-efc1924d8199]]></Field>
+	<Field name="ISnpKmTemplate" type="com.sunopsis.sql.DbInt"><![CDATA[117]]></Field>
+	<Field name="ISnpTrt" type="com.sunopsis.sql.DbInt"><![CDATA[146]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpKmTemplateJoin">
+		<Field name="GlobalId" type="java.lang.String"><![CDATA[7beacf5f-cde4-4004-b1c2-0393c4aba2e3]]></Field>
+	<Field name="ISnpKmTemplate" type="com.sunopsis.sql.DbInt"><![CDATA[117]]></Field>
+	<Field name="ISnpTrt" type="com.sunopsis.sql.DbInt"><![CDATA[144]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpKmTemplateJoin">
+		<Field name="GlobalId" type="java.lang.String"><![CDATA[139e052e-aed4-44e3-aed8-112240af8886]]></Field>
+	<Field name="ISnpKmTemplate" type="com.sunopsis.sql.DbInt"><![CDATA[117]]></Field>
+	<Field name="ISnpTrt" type="com.sunopsis.sql.DbInt"><![CDATA[151]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpKmTemplateJoin">
+		<Field name="GlobalId" type="java.lang.String"><![CDATA[b4c4c2f6-05ce-4ccf-81c9-31d5ac79916b]]></Field>
+	<Field name="ISnpKmTemplate" type="com.sunopsis.sql.DbInt"><![CDATA[117]]></Field>
+	<Field name="ISnpTrt" type="com.sunopsis.sql.DbInt"><![CDATA[143]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpKmTemplateJoin">
+		<Field name="GlobalId" type="java.lang.String"><![CDATA[67185bc9-0db1-4359-9001-11e6310e0b7d]]></Field>
+	<Field name="ISnpKmTemplate" type="com.sunopsis.sql.DbInt"><![CDATA[117]]></Field>
+	<Field name="ISnpTrt" type="com.sunopsis.sql.DbInt"><![CDATA[142]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpKmTemplateJoin">
+		<Field name="GlobalId" type="java.lang.String"><![CDATA[8e0d5f5e-0054-4bca-a0c9-cf6e97c7c0fe]]></Field>
+	<Field name="ISnpKmTemplate" type="com.sunopsis.sql.DbInt"><![CDATA[117]]></Field>
+	<Field name="ISnpTrt" type="com.sunopsis.sql.DbInt"><![CDATA[137]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpFKXRef">
+		<Field name="RefKey" type="java.lang.String"><![CDATA[SNP_KMTEMPLATE.117]]></Field>
+	<Field name="RefObjGlobalId" type="java.lang.String"><![CDATA[fa46ec9e-2d00-11e6-942d-00163e1ffd72]]></Field>
+ <Field name="RefObjFQName" type="java.lang.String"><![CDATA[SparkLookupCmd]]></Field>
+ <Field name="RefObjFQType" type="java.lang.String"><![CDATA[SNP_KMTEMPLATE]]></Field>
+ <Field name="RefObjFQNameLengths" type="java.lang.String"><![CDATA[14]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpFKXRef">
+		<Field name="RefKey" type="java.lang.String"><![CDATA[SNP_KMTEMPLATE.118]]></Field>
+	<Field name="RefObjGlobalId" type="java.lang.String"><![CDATA[fa46ecd0-2d00-11e6-942e-00163e1ffd72]]></Field>
+ <Field name="RefObjFQName" type="java.lang.String"><![CDATA[SparkLookupCmdStreaming]]></Field>
+ <Field name="RefObjFQType" type="java.lang.String"><![CDATA[SNP_KMTEMPLATE]]></Field>
+ <Field name="RefObjFQNameLengths" type="java.lang.String"><![CDATA[23]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpFKXRef">
+		<Field name="RefKey" type="java.lang.String"><![CDATA[SNP_KMTEMPLATE.144]]></Field>
+	<Field name="RefObjGlobalId" type="java.lang.String"><![CDATA[97fe9946-a4d5-4618-a15a-8d5b13a74326]]></Field>
+ <Field name="RefObjFQName" type="java.lang.String"><![CDATA[SparkPartitionRedistributeAndSort]]></Field>
+ <Field name="RefObjFQType" type="java.lang.String"><![CDATA[SNP_KMTEMPLATE]]></Field>
+ <Field name="RefObjFQNameLengths" type="java.lang.String"><![CDATA[33]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpFKXRef">
+		<Field name="RefKey" type="java.lang.String"><![CDATA[SNP_KMTEMPLATE.176]]></Field>
+	<Field name="RefObjGlobalId" type="java.lang.String"><![CDATA[0519558e-4d77-490a-bacb-69b2a2b2fad5]]></Field>
+ <Field name="RefObjFQName" type="java.lang.String"><![CDATA[SparkPartitionRedistributeAndSortDF]]></Field>
+ <Field name="RefObjFQType" type="java.lang.String"><![CDATA[SNP_KMTEMPLATE]]></Field>
+ <Field name="RefObjFQNameLengths" type="java.lang.String"><![CDATA[35]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpFKXRef">
+		<Field name="RefKey" type="java.lang.String"><![CDATA[SNP_KMTEMPLATE.172]]></Field>
+	<Field name="RefObjGlobalId" type="java.lang.String"><![CDATA[c5f54dca-279c-4de1-a552-1e270cbca8f8]]></Field>
+ <Field name="RefObjFQName" type="java.lang.String"><![CDATA[SparkLookupCmdDF]]></Field>
+ <Field name="RefObjFQType" type="java.lang.String"><![CDATA[SNP_KMTEMPLATE]]></Field>
+ <Field name="RefObjFQNameLengths" type="java.lang.String"><![CDATA[16]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpFKXRef">
+		<Field name="RefKey" type="java.lang.String"><![CDATA[SNP_TRT.148]]></Field>
+	<Field name="RefObjGlobalId" type="java.lang.String"><![CDATA[dabbcab5-caeb-423c-b6f2-bfb106747464]]></Field>
+ <Field name="RefObjFQName" type="java.lang.String"><![CDATA[LKM Spark to Kafka]]></Field>
+ <Field name="RefObjFQType" type="java.lang.String"><![CDATA[SNP_TRT]]></Field>
+ <Field name="RefObjFQNameLengths" type="java.lang.String"><![CDATA[18]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpFKXRef">
+		<Field name="RefKey" type="java.lang.String"><![CDATA[SNP_TRT.150]]></Field>
+	<Field name="RefObjGlobalId" type="java.lang.String"><![CDATA[1FD1D82B9F005A53E053CCC0E40AC733]]></Field>
+ <Field name="RefObjFQName" type="java.lang.String"><![CDATA[LKM Spark to SQL]]></Field>
+ <Field name="RefObjFQType" type="java.lang.String"><![CDATA[SNP_TRT]]></Field>
+ <Field name="RefObjFQNameLengths" type="java.lang.String"><![CDATA[16]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpFKXRef">
+		<Field name="RefKey" type="java.lang.String"><![CDATA[SNP_TRT.165]]></Field>
+	<Field name="RefObjGlobalId" type="java.lang.String"><![CDATA[310d86cf-27e0-48c0-ae73-82685449bcce]]></Field>
+ <Field name="RefObjFQName" type="java.lang.String"><![CDATA[IKM Spark Table Function]]></Field>
+ <Field name="RefObjFQType" type="java.lang.String"><![CDATA[SNP_TRT]]></Field>
+ <Field name="RefObjFQNameLengths" type="java.lang.String"><![CDATA[24]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpFKXRef">
+		<Field name="RefKey" type="java.lang.String"><![CDATA[SNP_TRT.146]]></Field>
+	<Field name="RefObjGlobalId" type="java.lang.String"><![CDATA[c2f113d5-e22b-4237-b25c-545872875536]]></Field>
+ <Field name="RefObjFQName" type="java.lang.String"><![CDATA[LKM Spark to Hive]]></Field>
+ <Field name="RefObjFQType" type="java.lang.String"><![CDATA[SNP_TRT]]></Field>
+ <Field name="RefObjFQNameLengths" type="java.lang.String"><![CDATA[17]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpFKXRef">
+		<Field name="RefKey" type="java.lang.String"><![CDATA[SNP_TRT.144]]></Field>
+	<Field name="RefObjGlobalId" type="java.lang.String"><![CDATA[995beb67-0645-4aa4-bb49-5bce5ab0c79a]]></Field>
+ <Field name="RefObjFQName" type="java.lang.String"><![CDATA[LKM Spark to Storage Cloud Service]]></Field>
+ <Field name="RefObjFQType" type="java.lang.String"><![CDATA[SNP_TRT]]></Field>
+ <Field name="RefObjFQNameLengths" type="java.lang.String"><![CDATA[34]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpFKXRef">
+		<Field name="RefKey" type="java.lang.String"><![CDATA[SNP_TRT.151]]></Field>
+	<Field name="RefObjGlobalId" type="java.lang.String"><![CDATA[28C4768839C04BAEE053CCC0E40AAAF7]]></Field>
+ <Field name="RefObjFQName" type="java.lang.String"><![CDATA[LKM Spark to Cassandra]]></Field>
+ <Field name="RefObjFQType" type="java.lang.String"><![CDATA[SNP_TRT]]></Field>
+ <Field name="RefObjFQNameLengths" type="java.lang.String"><![CDATA[22]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpFKXRef">
+		<Field name="RefKey" type="java.lang.String"><![CDATA[SNP_TRT.143]]></Field>
+	<Field name="RefObjGlobalId" type="java.lang.String"><![CDATA[dc7106dd-f608-4749-bd72-076f94908725]]></Field>
+ <Field name="RefObjFQName" type="java.lang.String"><![CDATA[LKM Spark to Object Storage]]></Field>
+ <Field name="RefObjFQType" type="java.lang.String"><![CDATA[SNP_TRT]]></Field>
+ <Field name="RefObjFQNameLengths" type="java.lang.String"><![CDATA[27]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpFKXRef">
+		<Field name="RefKey" type="java.lang.String"><![CDATA[SNP_TRT.142]]></Field>
+	<Field name="RefObjGlobalId" type="java.lang.String"><![CDATA[2B7D95B0B8A32C45E053E603C40A5DCB]]></Field>
+ <Field name="RefObjFQName" type="java.lang.String"><![CDATA[LKM Spark to HDFS]]></Field>
+ <Field name="RefObjFQType" type="java.lang.String"><![CDATA[SNP_TRT]]></Field>
+ <Field name="RefObjFQNameLengths" type="java.lang.String"><![CDATA[17]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpFKXRef">
+		<Field name="RefKey" type="java.lang.String"><![CDATA[SNP_TRT.137]]></Field>
+	<Field name="RefObjGlobalId" type="java.lang.String"><![CDATA[1986feab-eca2-4f5a-96a8-ecf827ac7cda]]></Field>
+ <Field name="RefObjFQName" type="java.lang.String"><![CDATA[LKM Spark to File]]></Field>
+ <Field name="RefObjFQType" type="java.lang.String"><![CDATA[SNP_TRT]]></Field>
+ <Field name="RefObjFQNameLengths" type="java.lang.String"><![CDATA[17]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.DwgExportSummary">
+		<Field name="ExpTxtNb" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="InstObjNb" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="JoinColNb" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="JoinNb" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="KeyColNb" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="KeyNb" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="LinkDiagNb" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="MorigTxtNb" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="MtxtNb" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="OrigTxtNb" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="OtherObjectsNb" type="com.sunopsis.sql.DbInt"><![CDATA[14]]></Field>
+	<Field name="PlanAgentNb" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="StepNb" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="TxtNb" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="UeOrigNb" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="UeUsedNb" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="VarPlanAgentNb" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="ScenTxtNb" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="OdiVersion" type="java.lang.String"><![CDATA[12.2.1]]></Field>
+	<Field name="OriginRepositoryID" type="com.sunopsis.sql.DbInt"><![CDATA[11]]></Field>
+	<Field name="RepositoryVersion" type="java.lang.String"><![CDATA[05.02.02.09]]></Field>
+</Object>
+</SunopsisExport>

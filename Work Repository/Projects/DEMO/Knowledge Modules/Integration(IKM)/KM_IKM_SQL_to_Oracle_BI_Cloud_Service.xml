@@ -1,0 +1,1917 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SunopsisExport>
+<Admin RepositoryVersion="05.02.02.09" IsLegacyIdCompatible="false" />
+<Encryption algorithm="AES" keyLength="128" exportKeyHash="WEmRQ+JmyuACiaX82T3M/aUM+bc24A/79BzeLFTlMxU=" keyVect="eEvABOuG/1NwN0vEkmxPwQ==" exportKeySalt="be8d68c0-565c-4208-b529-4e031f75388a" containsCipherText="false"/>
+<Object class="com.sunopsis.dwg.dbobj.SnpTrt">
+		<Field name="CleanupOnError" type="java.lang.String">null</Field>
+	<Field name="CompType" type="java.lang.String"><![CDATA[DATASTORE]]></Field>
+	<Field name="DelegateClass" type="java.lang.String">null</Field>
+	<Field name="DelegateScript" type="java.lang.String">null</Field>
+	<Field name="ExpectedAstClass" type="java.lang.String">null</Field>
+	<Field name="ExtVersion" type="java.lang.String">null</Field>
+	<Field name="FirstDate" type="java.sql.Timestamp"><![CDATA[2021-08-27 16:47:03.0]]></Field>
+	<Field name="FirstUser" type="java.lang.String"><![CDATA[SUPERVISOR]]></Field>
+	<Field name="GlobalId" type="java.lang.String"><![CDATA[00baea14-3710-4a3f-9eed-70503a673dba]]></Field>
+	<Field name="IndChange" type="java.lang.String"><![CDATA[U]]></Field>
+	<Field name="IndExcludeExUnitBegin" type="java.lang.String">null</Field>
+	<Field name="IndExcludeExUnitEnd" type="java.lang.String">null</Field>
+	<Field name="IndExcludeExUnitMain" type="java.lang.String">null</Field>
+	<Field name="IndExcludeMapBegin" type="java.lang.String">null</Field>
+	<Field name="IndExcludeMapCleanup" type="java.lang.String">null</Field>
+	<Field name="IndExcludeMapEnd" type="java.lang.String">null</Field>
+	<Field name="IndGenerateLoad" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="IndIsHidden" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="IndJrnMethod" type="java.lang.String"><![CDATA[S]]></Field>
+	<Field name="IndSuppSetBased" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="IntgType" type="java.lang.String">null</Field>
+	<Field name="IntVersion" type="com.sunopsis.sql.DbInt"><![CDATA[2]]></Field>
+	<Field name="IsConcurrent" type="java.lang.String">null</Field>
+	<Field name="IsSeeded" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="IBaseCompKm" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="IFolder" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="IProject" type="com.sunopsis.sql.DbInt"><![CDATA[1]]></Field>
+	<Field name="IScBaseTrt" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="IScOrigTrt" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="IScTrt" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="ITrt" type="com.sunopsis.sql.DbInt"><![CDATA[218]]></Field>
+	<Field name="ITxtDelTxt" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="ITxtTrtTxt" type="com.sunopsis.sql.DbInt"><![CDATA[2866]]></Field>
+	<Field name="KimMultiDserver" type="java.lang.String"><![CDATA[1]]></Field>
+	<Field name="KmDefault" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="KmLang" type="java.lang.String"><![CDATA[GROOVY]]></Field>
+	<Field name="KmSrcLang" type="java.lang.String">null</Field>
+	<Field name="KmSrcTechno" type="java.lang.String">null</Field>
+	<Field name="KmTechno" type="java.lang.String"><![CDATA[ORACLE_BICS]]></Field>
+	<Field name="KmVersion" type="java.lang.String"><![CDATA[9]]></Field>
+	<Field name="LastDate" type="java.sql.Timestamp"><![CDATA[2021-08-27 16:47:03.0]]></Field>
+	<Field name="LastUser" type="java.lang.String"><![CDATA[SUPERVISOR]]></Field>
+	<Field name="LkmType" type="java.lang.String"><![CDATA[N]]></Field>
+	<Field name="LChecksum" type="com.sunopsis.sql.DbInt"><![CDATA[-987295304]]></Field>
+	<Field name="LCode" type="java.lang.String">null</Field>
+	<Field name="OggJkm" type="java.lang.String">null</Field>
+	<Field name="OrdFolder" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="ProcType" type="java.lang.String"><![CDATA[T]]></Field>
+	<Field name="ProdAstType" type="java.lang.String">null</Field>
+	<Field name="RepGuid" type="java.lang.String">null</Field>
+	<Field name="RepVersion" type="java.lang.String">null</Field>
+	<Field name="ScriptPath" type="java.lang.String">null</Field>
+	<Field name="ScOrigTrtTag" type="java.lang.String">null</Field>
+	<Field name="Subtype" type="java.lang.String">null</Field>
+	<Field name="TrtName" type="java.lang.String"><![CDATA[IKM SQL to Oracle BI Cloud Service]]></Field>
+	<Field name="TrtType" type="java.lang.String"><![CDATA[KI]]></Field>
+	<Field name="VariableDefs" type="java.lang.String">null</Field>
+	<Field name="VLastDate" type="java.sql.Timestamp">null</Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpTxtHeader">
+		<Field name="Enc" type="java.lang.String">null</Field>
+	<Field name="EncKey" type="java.lang.String">null</Field>
+ <Field name="EncKeyVect" type="java.lang.String">null</Field>
+	<Field name="GlobalId" type="java.lang.String"><![CDATA[93075632-b36a-4d98-b4ae-6a201a8be44a]]></Field>
+	<Field name="ITxt" type="com.sunopsis.sql.DbInt"><![CDATA[2866]]></Field>
+	<Field name="ITxtOrig" type="com.sunopsis.sql.DbInt"><![CDATA[107]]></Field>
+	<Field name="SqlIndGrp" type="java.lang.String"><![CDATA[0]]></Field>
+ <Field name="Txt" type="java.lang.String"><![CDATA[COMPONENT NAME: IKM SQL to Oracle BI Cloud Service
+
+AUTHOR: Oracle
+
+Description :
+    - Integration Knowledge Module For Oracle BI Cloud Service. This knowledge module allows to load metadata and data Oracle BI Cloud Service.
+    - Please refer to the user guide for setup instructions.
+
+OPTIONS (Refer to Option descriptions for more information on each option)
+
+    - TRUNCATE_TARGET_TABLE: Whether to delete all data from the target before load. Valid only for Tables.
+    - CREATE_TARGET: Whether to create the target before data load.
+    - DROP_TARGET: Whether to drop the target before load. Applies to Tables and Datasets.
+    - DATA_WRITE_MODE: The mode for inserting data into the target. Valid only for Tables.
+    - NUM_RETRIES: Number of retry attempts if a batch execution fails.
+    - RETRY_DELAY: Delay in seconds for retrying failed batch request.
+    - REMOVE_DUPLICATES: Whether to remove duplicate data from within a batch. Valid only for Tables.
+    - BATCH_SIZE: The number of rows to be sent in one REST call. Upper limit is 100000. Default value is 1000.
+    - MAX_ERR_PER_BATCH: Maximum number of errors per batch insert. Supported only for Tables.
+    - TRACE_FILE: Trace file for logging REST calls to BICS.]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpOrigTxt">
+		<Field name="GlobalId" type="java.lang.String">null</Field>
+	<Field name="ITxtOrig" type="com.sunopsis.sql.DbInt"><![CDATA[107]]></Field>
+	<Field name="OrigineName" type="java.lang.String"><![CDATA[Edit Command]]></Field>
+	<Field name="SnpsCol" type="java.lang.String"><![CDATA[I_TXT_TRT_TXT]]></Field>
+	<Field name="SnpsTable" type="java.lang.String"><![CDATA[SNP_TRT]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpUserExit">
+		<Field name="ExprITxt" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="ExtVersion" type="java.lang.String">null</Field>
+	<Field name="GlobalId" type="java.lang.String"><![CDATA[0060e6bc-d792-477d-b05a-d0928c94a4b5]]></Field>
+	<Field name="IndChange" type="java.lang.String"><![CDATA[I]]></Field>
+	<Field name="ITrt" type="com.sunopsis.sql.DbInt"><![CDATA[218]]></Field>
+	<Field name="ITxtUeHelp" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="ITxtValue" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="IUserExit" type="com.sunopsis.sql.DbInt"><![CDATA[1002]]></Field>
+	<Field name="IUserExitGroup" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="Position" type="com.sunopsis.sql.DbInt"><![CDATA[1]]></Field>
+	<Field name="ShortValue" type="java.lang.String">null</Field>
+	<Field name="Subtypes" type="java.lang.String">null</Field>
+	<Field name="UeName" type="java.lang.String"><![CDATA[TRUNCATE_TARGET_TABLE]]></Field>
+	<Field name="UeSdesc" type="java.lang.String"><![CDATA[Whether to delete all data from the target before load. Valid only for Tables.]]></Field>
+	<Field name="UeType" type="java.lang.String"><![CDATA[C]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpUserExit">
+		<Field name="ExprITxt" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="ExtVersion" type="java.lang.String">null</Field>
+	<Field name="GlobalId" type="java.lang.String"><![CDATA[aab854f2-e14d-45c7-b97d-50e8c70c3322]]></Field>
+	<Field name="IndChange" type="java.lang.String"><![CDATA[I]]></Field>
+	<Field name="ITrt" type="com.sunopsis.sql.DbInt"><![CDATA[218]]></Field>
+	<Field name="ITxtUeHelp" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="ITxtValue" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="IUserExit" type="com.sunopsis.sql.DbInt"><![CDATA[1003]]></Field>
+	<Field name="IUserExitGroup" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="Position" type="com.sunopsis.sql.DbInt"><![CDATA[2]]></Field>
+	<Field name="ShortValue" type="java.lang.String">null</Field>
+	<Field name="Subtypes" type="java.lang.String">null</Field>
+	<Field name="UeName" type="java.lang.String"><![CDATA[CREATE_TARGET]]></Field>
+	<Field name="UeSdesc" type="java.lang.String"><![CDATA[Whether to create the target before data load.]]></Field>
+	<Field name="UeType" type="java.lang.String"><![CDATA[C]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpUserExit">
+		<Field name="ExprITxt" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="ExtVersion" type="java.lang.String">null</Field>
+	<Field name="GlobalId" type="java.lang.String"><![CDATA[aea800b6-50e4-4457-9843-dd6d491fd00a]]></Field>
+	<Field name="IndChange" type="java.lang.String"><![CDATA[I]]></Field>
+	<Field name="ITrt" type="com.sunopsis.sql.DbInt"><![CDATA[218]]></Field>
+	<Field name="ITxtUeHelp" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="ITxtValue" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="IUserExit" type="com.sunopsis.sql.DbInt"><![CDATA[1004]]></Field>
+	<Field name="IUserExitGroup" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="Position" type="com.sunopsis.sql.DbInt"><![CDATA[4]]></Field>
+	<Field name="ShortValue" type="java.lang.String">null</Field>
+	<Field name="Subtypes" type="java.lang.String">null</Field>
+	<Field name="UeName" type="java.lang.String"><![CDATA[DROP_TARGET]]></Field>
+	<Field name="UeSdesc" type="java.lang.String"><![CDATA[Whether to drop the target before load. Applies to Tables and Datasets.]]></Field>
+	<Field name="UeType" type="java.lang.String"><![CDATA[C]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpUserExit">
+		<Field name="ExprITxt" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="ExtVersion" type="java.lang.String">null</Field>
+	<Field name="GlobalId" type="java.lang.String"><![CDATA[afd742a9-a02e-4fb0-b096-4fc8e938b50b]]></Field>
+	<Field name="IndChange" type="java.lang.String"><![CDATA[I]]></Field>
+	<Field name="ITrt" type="com.sunopsis.sql.DbInt"><![CDATA[218]]></Field>
+	<Field name="ITxtUeHelp" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="ITxtValue" type="com.sunopsis.sql.DbInt"><![CDATA[2867]]></Field>
+	<Field name="IUserExit" type="com.sunopsis.sql.DbInt"><![CDATA[1005]]></Field>
+	<Field name="IUserExitGroup" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="Position" type="com.sunopsis.sql.DbInt"><![CDATA[5]]></Field>
+	<Field name="ShortValue" type="java.lang.String"><![CDATA[Insert all]]></Field>
+	<Field name="Subtypes" type="java.lang.String">null</Field>
+	<Field name="UeName" type="java.lang.String"><![CDATA[DATA_WRITE_MODE]]></Field>
+	<Field name="UeSdesc" type="java.lang.String"><![CDATA[The mode for inserting data into the target. Valid only for Tables.]]></Field>
+	<Field name="UeType" type="java.lang.String"><![CDATA[D]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpTxtHeader">
+		<Field name="Enc" type="java.lang.String">null</Field>
+	<Field name="EncKey" type="java.lang.String">null</Field>
+ <Field name="EncKeyVect" type="java.lang.String">null</Field>
+	<Field name="GlobalId" type="java.lang.String"><![CDATA[b54fe66f-7e9d-44d5-9253-7523da8aef8d]]></Field>
+	<Field name="ITxt" type="com.sunopsis.sql.DbInt"><![CDATA[2867]]></Field>
+	<Field name="ITxtOrig" type="com.sunopsis.sql.DbInt"><![CDATA[110]]></Field>
+	<Field name="SqlIndGrp" type="java.lang.String"><![CDATA[0]]></Field>
+ <Field name="Txt" type="java.lang.String"><![CDATA[Insert missing, Upsert, Insert all, Update only]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpOrigTxt">
+		<Field name="GlobalId" type="java.lang.String">null</Field>
+	<Field name="ITxtOrig" type="com.sunopsis.sql.DbInt"><![CDATA[110]]></Field>
+	<Field name="OrigineName" type="java.lang.String"><![CDATA[Text value]]></Field>
+	<Field name="SnpsCol" type="java.lang.String"><![CDATA[I_TXT_VALUE]]></Field>
+	<Field name="SnpsTable" type="java.lang.String"><![CDATA[SNP_USER_EXIT]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpUserExit">
+		<Field name="ExprITxt" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="ExtVersion" type="java.lang.String">null</Field>
+	<Field name="GlobalId" type="java.lang.String"><![CDATA[5c9f0da6-fafc-4dfb-8b83-acbb706b5ed2]]></Field>
+	<Field name="IndChange" type="java.lang.String"><![CDATA[I]]></Field>
+	<Field name="ITrt" type="com.sunopsis.sql.DbInt"><![CDATA[218]]></Field>
+	<Field name="ITxtUeHelp" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="ITxtValue" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="IUserExit" type="com.sunopsis.sql.DbInt"><![CDATA[1006]]></Field>
+	<Field name="IUserExitGroup" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="Position" type="com.sunopsis.sql.DbInt"><![CDATA[6]]></Field>
+	<Field name="ShortValue" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="Subtypes" type="java.lang.String">null</Field>
+	<Field name="UeName" type="java.lang.String"><![CDATA[NUM_RETRIES]]></Field>
+	<Field name="UeSdesc" type="java.lang.String"><![CDATA[Number of retry attempts if a batch execution fails.]]></Field>
+	<Field name="UeType" type="java.lang.String"><![CDATA[V]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpUserExit">
+		<Field name="ExprITxt" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="ExtVersion" type="java.lang.String">null</Field>
+	<Field name="GlobalId" type="java.lang.String"><![CDATA[750205f4-992d-4640-b0ba-95ffe71bfab7]]></Field>
+	<Field name="IndChange" type="java.lang.String"><![CDATA[I]]></Field>
+	<Field name="ITrt" type="com.sunopsis.sql.DbInt"><![CDATA[218]]></Field>
+	<Field name="ITxtUeHelp" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="ITxtValue" type="com.sunopsis.sql.DbInt"><![CDATA[2868]]></Field>
+	<Field name="IUserExit" type="com.sunopsis.sql.DbInt"><![CDATA[1007]]></Field>
+	<Field name="IUserExitGroup" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="Position" type="com.sunopsis.sql.DbInt"><![CDATA[7]]></Field>
+	<Field name="ShortValue" type="java.lang.String">null</Field>
+	<Field name="Subtypes" type="java.lang.String">null</Field>
+	<Field name="UeName" type="java.lang.String"><![CDATA[RETRY_DELAY]]></Field>
+	<Field name="UeSdesc" type="java.lang.String"><![CDATA[Delay in seconds for retrying failed batch request.]]></Field>
+	<Field name="UeType" type="java.lang.String"><![CDATA[T]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpTxtHeader">
+		<Field name="Enc" type="java.lang.String">null</Field>
+	<Field name="EncKey" type="java.lang.String">null</Field>
+ <Field name="EncKeyVect" type="java.lang.String">null</Field>
+	<Field name="GlobalId" type="java.lang.String"><![CDATA[61594aa3-e6f7-43ce-8b22-061bfed944a9]]></Field>
+	<Field name="ITxt" type="com.sunopsis.sql.DbInt"><![CDATA[2868]]></Field>
+	<Field name="ITxtOrig" type="com.sunopsis.sql.DbInt"><![CDATA[110]]></Field>
+	<Field name="SqlIndGrp" type="java.lang.String"><![CDATA[0]]></Field>
+ <Field name="Txt" type="java.lang.String"><![CDATA[5]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpUserExit">
+		<Field name="ExprITxt" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="ExtVersion" type="java.lang.String">null</Field>
+	<Field name="GlobalId" type="java.lang.String"><![CDATA[03625c5b-b42c-4da8-985f-67562797cb95]]></Field>
+	<Field name="IndChange" type="java.lang.String"><![CDATA[I]]></Field>
+	<Field name="ITrt" type="com.sunopsis.sql.DbInt"><![CDATA[218]]></Field>
+	<Field name="ITxtUeHelp" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="ITxtValue" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="IUserExit" type="com.sunopsis.sql.DbInt"><![CDATA[1008]]></Field>
+	<Field name="IUserExitGroup" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="Position" type="com.sunopsis.sql.DbInt"><![CDATA[8]]></Field>
+	<Field name="ShortValue" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="Subtypes" type="java.lang.String">null</Field>
+	<Field name="UeName" type="java.lang.String"><![CDATA[REMOVE_DUPLICATES]]></Field>
+	<Field name="UeSdesc" type="java.lang.String"><![CDATA[Whether to remove duplicate data from within a batch. Valid only for Tables.]]></Field>
+	<Field name="UeType" type="java.lang.String"><![CDATA[C]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpUserExit">
+		<Field name="ExprITxt" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="ExtVersion" type="java.lang.String">null</Field>
+	<Field name="GlobalId" type="java.lang.String"><![CDATA[ef24129d-e174-4732-a686-a016034f966d]]></Field>
+	<Field name="IndChange" type="java.lang.String"><![CDATA[I]]></Field>
+	<Field name="ITrt" type="com.sunopsis.sql.DbInt"><![CDATA[218]]></Field>
+	<Field name="ITxtUeHelp" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="ITxtValue" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="IUserExit" type="com.sunopsis.sql.DbInt"><![CDATA[1009]]></Field>
+	<Field name="IUserExitGroup" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="Position" type="com.sunopsis.sql.DbInt"><![CDATA[9]]></Field>
+	<Field name="ShortValue" type="java.lang.String"><![CDATA[1000]]></Field>
+	<Field name="Subtypes" type="java.lang.String">null</Field>
+	<Field name="UeName" type="java.lang.String"><![CDATA[BATCH_SIZE]]></Field>
+	<Field name="UeSdesc" type="java.lang.String"><![CDATA[The number of rows to be sent in one REST call. Upper limit is 100000.]]></Field>
+	<Field name="UeType" type="java.lang.String"><![CDATA[V]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpUserExit">
+		<Field name="ExprITxt" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="ExtVersion" type="java.lang.String">null</Field>
+	<Field name="GlobalId" type="java.lang.String"><![CDATA[25ad0154-bdb3-4833-8724-4b3dc3d2b9e6]]></Field>
+	<Field name="IndChange" type="java.lang.String"><![CDATA[I]]></Field>
+	<Field name="ITrt" type="com.sunopsis.sql.DbInt"><![CDATA[218]]></Field>
+	<Field name="ITxtUeHelp" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="ITxtValue" type="com.sunopsis.sql.DbInt"><![CDATA[2869]]></Field>
+	<Field name="IUserExit" type="com.sunopsis.sql.DbInt"><![CDATA[1010]]></Field>
+	<Field name="IUserExitGroup" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="Position" type="com.sunopsis.sql.DbInt"><![CDATA[11]]></Field>
+	<Field name="ShortValue" type="java.lang.String">null</Field>
+	<Field name="Subtypes" type="java.lang.String">null</Field>
+	<Field name="UeName" type="java.lang.String"><![CDATA[MAX_ERR_PER_BATCH]]></Field>
+	<Field name="UeSdesc" type="java.lang.String"><![CDATA[Maximum number of errors per batch insert. Supported only for Tables.]]></Field>
+	<Field name="UeType" type="java.lang.String"><![CDATA[T]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpTxtHeader">
+		<Field name="Enc" type="java.lang.String">null</Field>
+	<Field name="EncKey" type="java.lang.String">null</Field>
+ <Field name="EncKeyVect" type="java.lang.String">null</Field>
+	<Field name="GlobalId" type="java.lang.String"><![CDATA[481de007-49d5-41d3-89d6-336b2af5cef7]]></Field>
+	<Field name="ITxt" type="com.sunopsis.sql.DbInt"><![CDATA[2869]]></Field>
+	<Field name="ITxtOrig" type="com.sunopsis.sql.DbInt"><![CDATA[110]]></Field>
+	<Field name="SqlIndGrp" type="java.lang.String"><![CDATA[0]]></Field>
+ <Field name="Txt" type="java.lang.String"><![CDATA[0]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpUserExit">
+		<Field name="ExprITxt" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="ExtVersion" type="java.lang.String">null</Field>
+	<Field name="GlobalId" type="java.lang.String"><![CDATA[6908fe50-e260-468b-aa21-b313ff292153]]></Field>
+	<Field name="IndChange" type="java.lang.String"><![CDATA[I]]></Field>
+	<Field name="ITrt" type="com.sunopsis.sql.DbInt"><![CDATA[218]]></Field>
+	<Field name="ITxtUeHelp" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="ITxtValue" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="IUserExit" type="com.sunopsis.sql.DbInt"><![CDATA[1011]]></Field>
+	<Field name="IUserExitGroup" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="Position" type="com.sunopsis.sql.DbInt"><![CDATA[12]]></Field>
+	<Field name="ShortValue" type="java.lang.String"><![CDATA[<?= java.lang.System.getProperty("java.io.tmpdir") ?>/bics_calls.log]]></Field>
+	<Field name="Subtypes" type="java.lang.String">null</Field>
+	<Field name="UeName" type="java.lang.String"><![CDATA[TRACE_FILE]]></Field>
+	<Field name="UeSdesc" type="java.lang.String"><![CDATA[Trace file for logging REST calls to BICS.]]></Field>
+	<Field name="UeType" type="java.lang.String"><![CDATA[V]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpLineTrt">
+		<Field name="AlwaysExe" type="java.lang.String"><![CDATA[1]]></Field>
+	<Field name="BrpId" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="ColConnectId" type="java.lang.String">null</Field>
+	<Field name="ColContextCode" type="java.lang.String">null</Field>
+	<Field name="ColIndCommit" type="java.lang.String">null</Field>
+	<Field name="ColIsolLevel" type="java.lang.String">null</Field>
+	<Field name="ColITxt" type="com.sunopsis.sql.DbInt"><![CDATA[2870]]></Field>
+	<Field name="ColLanguage" type="java.lang.String">null</Field>
+	<Field name="ColLschemaName" type="java.lang.String">null</Field>
+	<Field name="ColTechno" type="java.lang.String">null</Field>
+	<Field name="DefConnectId" type="java.lang.String">null</Field>
+	<Field name="DefContextCode" type="java.lang.String">null</Field>
+	<Field name="DefIndCommit" type="java.lang.String">null</Field>
+	<Field name="DefIsolLevel" type="java.lang.String">null</Field>
+	<Field name="DefITxt" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="DefLanguage" type="java.lang.String">null</Field>
+	<Field name="DefLschemaName" type="java.lang.String">null</Field>
+	<Field name="DefTechno" type="java.lang.String"><![CDATA[ORACLE_BICS]]></Field>
+	<Field name="ExeChannel" type="java.lang.String">null</Field>
+	<Field name="FirstDate" type="java.sql.Timestamp"><![CDATA[2021-08-27 16:47:03.0]]></Field>
+	<Field name="FirstUser" type="java.lang.String"><![CDATA[SUPERVISOR]]></Field>
+	<Field name="GlobalId" type="java.lang.String"><![CDATA[ebc2f2ef-9372-4ebc-a7e7-2c79e6fa2bcb]]></Field>
+	<Field name="IndErr" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="IndLogFinalCmd" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="IndLogNb" type="java.lang.String">null</Field>
+	<Field name="ILineTrt" type="com.sunopsis.sql.DbInt"><![CDATA[1304]]></Field>
+	<Field name="IRefLineTrt" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="IRefTrt" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="ITrt" type="com.sunopsis.sql.DbInt"><![CDATA[218]]></Field>
+	<Field name="KcmAk" type="java.lang.String">null</Field>
+	<Field name="KcmCond" type="java.lang.String">null</Field>
+	<Field name="KcmErrDel" type="java.lang.String">null</Field>
+	<Field name="KcmJoin" type="java.lang.String">null</Field>
+	<Field name="KcmNull" type="java.lang.String">null</Field>
+	<Field name="KcmPk" type="java.lang.String">null</Field>
+	<Field name="KimDrvdSel" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="KimIdx" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="KimJrn" type="java.lang.String"><![CDATA[1]]></Field>
+	<Field name="KimJrnPop" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="KjmCreate" type="java.lang.String">null</Field>
+	<Field name="KjmDrop" type="java.lang.String">null</Field>
+	<Field name="KjmExtend" type="java.lang.String">null</Field>
+	<Field name="KjmInstall" type="java.lang.String">null</Field>
+	<Field name="KjmLock" type="java.lang.String">null</Field>
+	<Field name="KjmPurge" type="java.lang.String">null</Field>
+	<Field name="KjmSetInstall" type="java.lang.String">null</Field>
+	<Field name="KjmSetUninstall" type="java.lang.String">null</Field>
+	<Field name="KjmSubscribe" type="java.lang.String">null</Field>
+	<Field name="KjmTableOrder" type="java.lang.String">null</Field>
+	<Field name="KjmUninstall" type="java.lang.String">null</Field>
+	<Field name="KjmUnlock" type="java.lang.String">null</Field>
+	<Field name="KjmUnsubscribe" type="java.lang.String">null</Field>
+	<Field name="KlmAfterInt" type="java.lang.String">null</Field>
+	<Field name="KlmIdx" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="KlmJrn" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="LastDate" type="java.sql.Timestamp"><![CDATA[2021-08-27 16:47:03.0]]></Field>
+	<Field name="LastUser" type="java.lang.String"><![CDATA[SUPERVISOR]]></Field>
+	<Field name="LineType" type="java.lang.String"><![CDATA[I]]></Field>
+	<Field name="LogLevDet" type="java.lang.String"><![CDATA[3]]></Field>
+	<Field name="MapTaskType" type="java.lang.String"><![CDATA[EM]]></Field>
+	<Field name="OrdTrt" type="com.sunopsis.sql.DbInt"><![CDATA[90]]></Field>
+	<Field name="SqlName" type="java.lang.String"><![CDATA[Cleanup Journalized Table]]></Field>
+	<Field name="SupportedSubtypes" type="java.lang.String">null</Field>
+	<Field name="VariableDefs" type="java.lang.String">null</Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpTxtHeader">
+		<Field name="Enc" type="java.lang.String">null</Field>
+	<Field name="EncKey" type="java.lang.String">null</Field>
+ <Field name="EncKeyVect" type="java.lang.String">null</Field>
+	<Field name="GlobalId" type="java.lang.String"><![CDATA[c89a8cdd-f530-4f02-9205-81321496a687]]></Field>
+	<Field name="ITxt" type="com.sunopsis.sql.DbInt"><![CDATA[2870]]></Field>
+	<Field name="ITxtOrig" type="com.sunopsis.sql.DbInt"><![CDATA[103]]></Field>
+	<Field name="SqlIndGrp" type="java.lang.String"><![CDATA[2]]></Field>
+ <Field name="Txt" type="java.lang.String"><![CDATA[<% if ("C".equals(odiRef.getJrnInfo( "JRN_METHOD"))) { %> 
+/* Consistant journalization detected. */
+/* Lock should be done by a specific step in a package */ 
+<% } else { %>
+delete from <%=odiRef.getTable("L","JRN_NAME","A")%>
+where 	JRN_CONSUMED = '1'
+<%=odiRef.getJrnFilter()%>
+<% } %>]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpOrigTxt">
+		<Field name="GlobalId" type="java.lang.String">null</Field>
+	<Field name="ITxtOrig" type="com.sunopsis.sql.DbInt"><![CDATA[103]]></Field>
+	<Field name="OrigineName" type="java.lang.String"><![CDATA[Source Technology]]></Field>
+	<Field name="SnpsCol" type="java.lang.String"><![CDATA[COL_I_TXT]]></Field>
+	<Field name="SnpsTable" type="java.lang.String"><![CDATA[SNP_LINE_TRT]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpLineTrt">
+		<Field name="AlwaysExe" type="java.lang.String"><![CDATA[1]]></Field>
+	<Field name="BrpId" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="ColConnectId" type="java.lang.String">null</Field>
+	<Field name="ColContextCode" type="java.lang.String">null</Field>
+	<Field name="ColIndCommit" type="java.lang.String">null</Field>
+	<Field name="ColIsolLevel" type="java.lang.String">null</Field>
+	<Field name="ColITxt" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="ColLanguage" type="java.lang.String">null</Field>
+	<Field name="ColLschemaName" type="java.lang.String">null</Field>
+	<Field name="ColTechno" type="java.lang.String">null</Field>
+	<Field name="DefConnectId" type="java.lang.String">null</Field>
+	<Field name="DefContextCode" type="java.lang.String">null</Field>
+	<Field name="DefIndCommit" type="java.lang.String">null</Field>
+	<Field name="DefIsolLevel" type="java.lang.String">null</Field>
+	<Field name="DefITxt" type="com.sunopsis.sql.DbInt"><![CDATA[2871]]></Field>
+	<Field name="DefLanguage" type="java.lang.String">null</Field>
+	<Field name="DefLschemaName" type="java.lang.String">null</Field>
+	<Field name="DefTechno" type="java.lang.String"><![CDATA[GROOVY]]></Field>
+	<Field name="ExeChannel" type="java.lang.String">null</Field>
+	<Field name="FirstDate" type="java.sql.Timestamp"><![CDATA[2021-08-27 16:47:03.0]]></Field>
+	<Field name="FirstUser" type="java.lang.String"><![CDATA[SUPERVISOR]]></Field>
+	<Field name="GlobalId" type="java.lang.String"><![CDATA[b01f112d-749f-4005-8603-955b799d3e3c]]></Field>
+	<Field name="IndErr" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="IndLogFinalCmd" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="IndLogNb" type="java.lang.String">null</Field>
+	<Field name="ILineTrt" type="com.sunopsis.sql.DbInt"><![CDATA[1305]]></Field>
+	<Field name="IRefLineTrt" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="IRefTrt" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="ITrt" type="com.sunopsis.sql.DbInt"><![CDATA[218]]></Field>
+	<Field name="KcmAk" type="java.lang.String">null</Field>
+	<Field name="KcmCond" type="java.lang.String">null</Field>
+	<Field name="KcmErrDel" type="java.lang.String">null</Field>
+	<Field name="KcmJoin" type="java.lang.String">null</Field>
+	<Field name="KcmNull" type="java.lang.String">null</Field>
+	<Field name="KcmPk" type="java.lang.String">null</Field>
+	<Field name="KimDrvdSel" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="KimIdx" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="KimJrn" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="KimJrnPop" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="KjmCreate" type="java.lang.String">null</Field>
+	<Field name="KjmDrop" type="java.lang.String">null</Field>
+	<Field name="KjmExtend" type="java.lang.String">null</Field>
+	<Field name="KjmInstall" type="java.lang.String">null</Field>
+	<Field name="KjmLock" type="java.lang.String">null</Field>
+	<Field name="KjmPurge" type="java.lang.String">null</Field>
+	<Field name="KjmSetInstall" type="java.lang.String">null</Field>
+	<Field name="KjmSetUninstall" type="java.lang.String">null</Field>
+	<Field name="KjmSubscribe" type="java.lang.String">null</Field>
+	<Field name="KjmTableOrder" type="java.lang.String">null</Field>
+	<Field name="KjmUninstall" type="java.lang.String">null</Field>
+	<Field name="KjmUnlock" type="java.lang.String">null</Field>
+	<Field name="KjmUnsubscribe" type="java.lang.String">null</Field>
+	<Field name="KlmAfterInt" type="java.lang.String">null</Field>
+	<Field name="KlmIdx" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="KlmJrn" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="LastDate" type="java.sql.Timestamp"><![CDATA[2021-08-27 16:47:03.0]]></Field>
+	<Field name="LastUser" type="java.lang.String"><![CDATA[SUPERVISOR]]></Field>
+	<Field name="LineType" type="java.lang.String"><![CDATA[I]]></Field>
+	<Field name="LogLevDet" type="java.lang.String"><![CDATA[3]]></Field>
+	<Field name="MapTaskType" type="java.lang.String"><![CDATA[EM]]></Field>
+	<Field name="OrdTrt" type="com.sunopsis.sql.DbInt"><![CDATA[20]]></Field>
+	<Field name="SqlName" type="java.lang.String"><![CDATA[Prepare for loading]]></Field>
+	<Field name="SupportedSubtypes" type="java.lang.String">null</Field>
+	<Field name="VariableDefs" type="java.lang.String">null</Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpTxtHeader">
+		<Field name="Enc" type="java.lang.String">null</Field>
+	<Field name="EncKey" type="java.lang.String">null</Field>
+ <Field name="EncKeyVect" type="java.lang.String">null</Field>
+	<Field name="GlobalId" type="java.lang.String"><![CDATA[ab8bb98a-8d90-4df8-9713-9e5be10be4ca]]></Field>
+	<Field name="ITxt" type="com.sunopsis.sql.DbInt"><![CDATA[2871]]></Field>
+	<Field name="ITxtOrig" type="com.sunopsis.sql.DbInt"><![CDATA[102]]></Field>
+	<Field name="SqlIndGrp" type="java.lang.String"><![CDATA[2]]></Field>
+ <Field name="Txt" type="java.lang.String"><![CDATA[<%
+String maxErrorsPerBatch = odiRef.getOption("MAX_ERR_PER_BATCH");
+String numRetries = odiRef.getOption("NUM_RETRIES");
+
+String createTarget = odiRef.getOption("CREATE_TARGET_TABLE");
+String createIndexes = odiRef.getOption("CREATE_INDEXES");
+String dropTarget = odiRef.getOption("DROP_TARGET");
+String truncateTarget = odiRef.getOption("TRUNCATE_TARGET_TABLE");
+
+String removeDuplicates = odiRef.getOption("REMOVE_DUPLICATES");
+String batchSize = odiRef.getOption("BATCH_SIZE");
+String validateColumns = odiRef.getOption("VALIDATE_COLUMNS");
+String dataWriteMode = odiRef.getOption("DATA_WRITE_MODE");
+String tgtTable = odiRef.getTable("L", "TARG_NAME", "A");
+String traceFileLoc = odiRef.getOption("TRACE_FILE");
+String retryDelay = odiRef.getOption("RETRY_DELAY");
+if("0".equals(retryDelay) || "".equals(retryDelay))
+    retryDelay = 5;
+
+if("".equals(maxErrorsPerBatch))
+    maxErrorsPerBatch = "0";
+
+String tgtType = odiRef.getInfo("DEST_PSCHEMA_BICS_TARGETTYPE");
+
+static final String COLUMN_NAME_KEY = "columnName";
+static final String COLUMN_DT_KEY = "dataType";
+static final String COLUMN_DT_LENGTH_KEY = "length";
+static final String COLUMN_DT_PRECISION_KEY = "precision";
+static final String COLUMN_POSITION_KEY = "position";
+static final String STREAM_DATA_TYPE_KEY = "optionalStreamType";
+static final String STREAM_DATA_TYPE_VAL = "Java";
+static final String DATASET_FIRST_BATCH = "firstBatch";
+static final String DATASET_LAST_BATCH = "lastBatch";
+static final String MISSING_VAL = "";
+        
+logicalSchema = odiRef.getInfo("DEST_LSCHEMA_NAME"); 
+bicsContext = odiRef.getContext("CTX_CODE");
+String bicsDomain  = odiRef.getInfo("DEST_CONNECT_BICS_ID_DOMAIN");
+%>
+
+def isValid = true;]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpOrigTxt">
+		<Field name="GlobalId" type="java.lang.String">null</Field>
+	<Field name="ITxtOrig" type="com.sunopsis.sql.DbInt"><![CDATA[102]]></Field>
+	<Field name="OrigineName" type="java.lang.String"><![CDATA[Target Technology]]></Field>
+	<Field name="SnpsCol" type="java.lang.String"><![CDATA[DEF_I_TXT]]></Field>
+	<Field name="SnpsTable" type="java.lang.String"><![CDATA[SNP_LINE_TRT]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpLineTrt">
+		<Field name="AlwaysExe" type="java.lang.String"><![CDATA[1]]></Field>
+	<Field name="BrpId" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="ColConnectId" type="java.lang.String">null</Field>
+	<Field name="ColContextCode" type="java.lang.String">null</Field>
+	<Field name="ColIndCommit" type="java.lang.String">null</Field>
+	<Field name="ColIsolLevel" type="java.lang.String">null</Field>
+	<Field name="ColITxt" type="com.sunopsis.sql.DbInt"><![CDATA[2872]]></Field>
+	<Field name="ColLanguage" type="java.lang.String">null</Field>
+	<Field name="ColLschemaName" type="java.lang.String">null</Field>
+	<Field name="ColTechno" type="java.lang.String"><![CDATA[GROOVY]]></Field>
+	<Field name="DefConnectId" type="java.lang.String">null</Field>
+	<Field name="DefContextCode" type="java.lang.String">null</Field>
+	<Field name="DefIndCommit" type="java.lang.String">null</Field>
+	<Field name="DefIsolLevel" type="java.lang.String">null</Field>
+	<Field name="DefITxt" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="DefLanguage" type="java.lang.String">null</Field>
+	<Field name="DefLschemaName" type="java.lang.String">null</Field>
+	<Field name="DefTechno" type="java.lang.String">null</Field>
+	<Field name="ExeChannel" type="java.lang.String">null</Field>
+	<Field name="FirstDate" type="java.sql.Timestamp"><![CDATA[2021-08-27 16:47:03.0]]></Field>
+	<Field name="FirstUser" type="java.lang.String"><![CDATA[SUPERVISOR]]></Field>
+	<Field name="GlobalId" type="java.lang.String"><![CDATA[59dcb5c4-1b7c-4dac-823a-259051b6bfc6]]></Field>
+	<Field name="IndErr" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="IndLogFinalCmd" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="IndLogNb" type="java.lang.String">null</Field>
+	<Field name="ILineTrt" type="com.sunopsis.sql.DbInt"><![CDATA[1306]]></Field>
+	<Field name="IRefLineTrt" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="IRefTrt" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="ITrt" type="com.sunopsis.sql.DbInt"><![CDATA[218]]></Field>
+	<Field name="KcmAk" type="java.lang.String">null</Field>
+	<Field name="KcmCond" type="java.lang.String">null</Field>
+	<Field name="KcmErrDel" type="java.lang.String">null</Field>
+	<Field name="KcmJoin" type="java.lang.String">null</Field>
+	<Field name="KcmNull" type="java.lang.String">null</Field>
+	<Field name="KcmPk" type="java.lang.String">null</Field>
+	<Field name="KimDrvdSel" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="KimIdx" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="KimJrn" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="KimJrnPop" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="KjmCreate" type="java.lang.String">null</Field>
+	<Field name="KjmDrop" type="java.lang.String">null</Field>
+	<Field name="KjmExtend" type="java.lang.String">null</Field>
+	<Field name="KjmInstall" type="java.lang.String">null</Field>
+	<Field name="KjmLock" type="java.lang.String">null</Field>
+	<Field name="KjmPurge" type="java.lang.String">null</Field>
+	<Field name="KjmSetInstall" type="java.lang.String">null</Field>
+	<Field name="KjmSetUninstall" type="java.lang.String">null</Field>
+	<Field name="KjmSubscribe" type="java.lang.String">null</Field>
+	<Field name="KjmTableOrder" type="java.lang.String">null</Field>
+	<Field name="KjmUninstall" type="java.lang.String">null</Field>
+	<Field name="KjmUnlock" type="java.lang.String">null</Field>
+	<Field name="KjmUnsubscribe" type="java.lang.String">null</Field>
+	<Field name="KlmAfterInt" type="java.lang.String">null</Field>
+	<Field name="KlmIdx" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="KlmJrn" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="LastDate" type="java.sql.Timestamp"><![CDATA[2021-08-27 16:47:03.0]]></Field>
+	<Field name="LastUser" type="java.lang.String"><![CDATA[SUPERVISOR]]></Field>
+	<Field name="LineType" type="java.lang.String"><![CDATA[I]]></Field>
+	<Field name="LogLevDet" type="java.lang.String"><![CDATA[3]]></Field>
+	<Field name="MapTaskType" type="java.lang.String"><![CDATA[EM]]></Field>
+	<Field name="OrdTrt" type="com.sunopsis.sql.DbInt"><![CDATA[70]]></Field>
+	<Field name="SqlName" type="java.lang.String"><![CDATA[Load data into Oracle BICS]]></Field>
+	<Field name="SupportedSubtypes" type="java.lang.String">null</Field>
+	<Field name="VariableDefs" type="java.lang.String">null</Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpTxtHeader">
+		<Field name="Enc" type="java.lang.String">null</Field>
+	<Field name="EncKey" type="java.lang.String">null</Field>
+ <Field name="EncKeyVect" type="java.lang.String">null</Field>
+	<Field name="GlobalId" type="java.lang.String"><![CDATA[aa501696-8716-4413-b0cc-46d1e90bf13f]]></Field>
+	<Field name="ITxt" type="com.sunopsis.sql.DbInt"><![CDATA[2872]]></Field>
+	<Field name="ITxtOrig" type="com.sunopsis.sql.DbInt"><![CDATA[103]]></Field>
+	<Field name="SqlIndGrp" type="java.lang.String"><![CDATA[2]]></Field>
+ <Field name="Txt" type="java.lang.String"><![CDATA[<%
+pkColumns= odiRef.getTargetColList("[", "[COL_NAME]", ",","]", "PK");
+ukColumns= odiRef.getTargetColList("[", "[COL_NAME]", ",","]", "UK");
+%>
+
+import oracle.odi.runtime.rest.InternalInvokeRESTfulService;
+import org.codehaus.jettison.json.JSONObject;
+import org.codehaus.jettison.json.JSONArray;
+import org.apache.commons.io.IOUtils;
+
+import java.io.ByteArrayOutputStream;
+import java.io.ByteArrayInputStream;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.nio.file.StandardOpenOption;
+
+import java.sql.ResultSet;
+import java.sql.ResultSetMetaData;
+import java.sql.SQLException;
+
+import groovy.transform.Field;
+import oracle.odi.runtime.rest.RestReqBodyPart;
+
+@Field String STATS = "stats";
+@Field String STATS_STATUS = "status";
+@Field String STATS_INSERTED_ROWS = "insertedRows";
+@Field String STATS_UPDATED_ROWS = "updatedRows";
+@Field String STATS_FAILED_ROWS = "failedRows";
+@Field String STATS_START_TIME = "startTime";
+@Field String STATS_END_TIME = "endTime";
+
+def tgtColNames = "<%=odiRef.getTargetColList("[", "[COL_NAME]", ",", "]")%>"; 
+def tgtColPKs = "<%=odiRef.getTargetColList("[", "[COL_NAME]", ",", "]","PK")%>"; //for Table columnMap
+def tgtColUKs = "<%=odiRef.getTargetColList("[", "[COL_NAME]", ",", "]","UK")%>"; //for Table columnMap
+def tgtColTypes = "<%=odiRef.getTargetColList("[", "[DEST_DT]", ",", "]")%>"; //for Dataset
+def tgtColScales = "<%=odiRef.getTargetColList("[", "[SCALE]", ",", "]")%>"; //for Dataset
+def tgtColLengths = "<%=odiRef.getTargetColList("[", "[LONGC]", ",", "]")%>"; //for Dataset
+def tgtColPositions = "<%=odiRef.getTargetColList("[", "[POS]", ",", "]")%>";
+
+def removeDupTableData = "1".equals("<% out.print(removeDuplicates);%>");
+@Field String dataLoadOperation = "odi_bics_table_update_data";
+@Field String tableName = "<% out.print(tgtTable); %>";
+@Field String reqTemplateName = "tablename";
+
+if("T".equals("<% out.print(tgtType);%>")) {
+    if("Insert all".equalsIgnoreCase("<% out.print(dataWriteMode);%>") || 
+            "Insert missing".equalsIgnoreCase("<% out.print(dataWriteMode);%>")) {
+        dataLoadOperation = "odi_bics_table_insert_data";
+    }
+    tableName = tableName.toUpperCase();
+} else {
+    dataLoadOperation = "odi_bics_dataset_insert_data";
+    reqTemplateName = "setname";
+}
+
+String convertExceptionToString(Throwable ex) {
+    java.io.StringWriter sw= new java.io.StringWriter();
+    java.io.PrintWriter pw = new java.io.PrintWriter(sw);
+    ex.printStackTrace(pw);
+    return sw.getBuffer().toString();
+}
+        
+void invokeRESTSendData(reqStructurePart, reqContentPart, responseOutputStream) {
+    def restCall = new InternalInvokeRESTfulService();
+
+    odiRef.configureTool(restCall);
+    restCall.setContext("<% out.print(bicsContext); %>");
+    restCall.setLSchema("<% out.print(logicalSchema); %>");
+    restCall.setOperation(dataLoadOperation);
+    restCall.setResponseStream(responseOutputStream);
+    def reqList = [reqStructurePart, reqContentPart];
+    restCall.setReqBodyPartDetails(reqList);
+    def restParameters = new Vector();
+    restParameters.add(["-HEADER.X-ID-TENANT-NAME", "<% out.print(bicsDomain); %>"] as String[]);
+    restParameters.add(["-REQUEST_TEMPLATE." + reqTemplateName, tableName] as String[]);
+    restCall.setParameters(restParameters);
+
+    def traceLoc = "<% out.print(traceFileLoc); %>";
+    if(! ("".equals(traceLoc) ) ) {
+        restCall.setTraceStream(Files.newOutputStream(Paths.get(traceLoc), StandardOpenOption.CREATE, StandardOpenOption.APPEND));
+    }
+    
+    restCall.execute();       
+}
+
+void logInfo (String message) {
+    odiRef.getLogger().log(java.util.logging.Level.INFO, "[Load Target]" + message);
+}
+
+List getAsList(input) {
+    if (input==null || "".equals(input))
+    input = "[]";
+    
+    return input[1..-2].tokenize(',')*.toString();
+}
+
+class BICSDataLoadTableModel {
+
+    public JSONObject getDataloadTableJson(expressionList, columnNameList, columnPositionList, columnPKs, columnUKs, columnFKs, removeDupTableData) {
+
+        int numExpressionss = expressionList.size();
+
+        JSONObject dataLoadInformation = new JSONObject();
+        int numColumns = columnNameList.size();
+
+	JSONArray columnMaps = new JSONArray();
+	for(int i=0; i< numColumns; i++) {
+        
+            //check for any mapping expresson for the column
+            if (expressionList[i] == null || expressionList[i] == "0")
+                continue;
+        
+            JSONObject dataloadColumnMap = new JSONObject();
+            String columnName = columnNameList[i] == null ? "" : columnNameList[i].trim();
+            
+            if("".equals(columnName))
+	        throw new OdiKMException("ODIKM-BICS-1000", "ODIKM-BICS-1000: Column missing name");
+            JSONObject columnInfo = new JSONObject();
+            columnInfo.put("name", columnName);
+            
+            def partOfUniqueKey = "false";
+            if(columnPKs.indexOf(columnName)>-1 || columnUKs.indexOf(columnName)>-1)
+                partOfUniqueKey = "true";
+
+            columnInfo.put("partOfUniqueKey", partOfUniqueKey);
+
+
+            dataloadColumnMap.put("column", columnInfo);            
+            dataloadColumnMap.put("<% out.print(COLUMN_POSITION_KEY); %>", Integer.parseInt(expressionList[i]));
+ 
+            columnMaps.put(dataloadColumnMap);                                  
+        }
+        
+	dataLoadInformation.put("columnMaps", columnMaps);
+        dataLoadInformation.put("optionalMaximumErrors", "<% out.print(maxErrorsPerBatch);%>");
+	dataLoadInformation.put("<% out.print(STREAM_DATA_TYPE_KEY); %>", "<% out.print(STREAM_DATA_TYPE_VAL);%>");
+	dataLoadInformation.put("optionalWriteMode", "<% out.print(dataWriteMode);%>");
+	dataLoadInformation.put("removeDuplicates", removeDupTableData);
+	return dataLoadInformation;
+    }
+}
+
+class BICSDataLoadDatasetModel {
+    
+    public JSONObject getDataloadDatasetJson(expressionList, columnNameList, columnDatatypeList, columnDatatypeLengthList,
+                           columnDatatypePrecisionList, columnPositionList, isFirstBatch, isLastBatch) {
+
+        int numExpressionss = expressionList.size();
+          
+        int numColumns = columnNameList.size();
+        JSONObject dataLoadInformation = new JSONObject();
+	JSONArray columnsArray = new JSONArray();
+	for(int i=0; i< numColumns; i++) {
+
+            //check for any mapping expresson for the column
+            if (expressionList[i] == "0")
+                continue;
+
+            String columnName = columnNameList[i] == null ? "" : columnNameList[i].trim();
+            String dataType = columnDatatypeList[i] == null ? "" : columnDatatypeList[i].trim();
+            String datatypeLength = columnDatatypeLengthList[i] == null ? "" : columnDatatypeLengthList[i].trim();
+            String datatypePrecision = columnDatatypePrecisionList[i] == null ? "" : columnDatatypePrecisionList[i].trim();
+            String columnPosition = columnPositionList[i] == null ? "null" : columnPositionList[i].trim();
+            if("".equals(columnName))
+	        throw new OdiKMException("ODIKM-BICS-1000", "ODIKM-BICS-1000: Column missing name");
+	    if("".equals(dataType))
+	        throw new OdiKMException("ODIKM-BICS-1001", "ODIKM-BICS-1001: Column " + i + " missing datatype");
+            JSONObject columnInfo = new JSONObject();
+            columnInfo.put("columnName", columnName);
+            columnInfo.put("<% out.print(COLUMN_DT_KEY); %>", dataType);
+            if("".equals(datatypeLength) || "0".equals(datatypeLength)) {
+                datatypeLength = "VARCHAR".equalsIgnoreCase(dataType) ? 50 : 10;
+            }
+            columnInfo.put("<% out.print(COLUMN_DT_LENGTH_KEY); %>", datatypeLength);
+            columnInfo.put("<% out.print(COLUMN_DT_PRECISION_KEY); %>", "".equals(datatypePrecision) ? 
+                    0 : datatypePrecision);
+            //columnInfo.put("<% out.print(COLUMN_POSITION_KEY); %>", columnPosition);
+
+            columnInfo.put("<% out.print(COLUMN_POSITION_KEY); %>", Integer.parseInt(expressionList[i]));
+
+            columnsArray.put(columnInfo);
+        }
+        dataLoadInformation.put("columns", columnsArray);
+        dataLoadInformation.put("<% out.print(DATASET_FIRST_BATCH); %>", isFirstBatch);
+        dataLoadInformation.put("<% out.print(DATASET_LAST_BATCH); %>", isLastBatch);
+        dataLoadInformation.put("<% out.print(STREAM_DATA_TYPE_KEY); %>", "<% out.print(STREAM_DATA_TYPE_VAL);%>");
+	return dataLoadInformation;
+    }
+}
+
+def batchSize = "<% out.print(batchSize);%>";
+batchSize = batchSize.isInteger() ? batchSize.toInteger() : 1000;
+if(batchSize >= 1000000) {
+    batchSize = 1000000;
+}
+def numRetries = "<% out.print(numRetries);%>";
+numRetries = numRetries.isInteger() ? numRetries.toInteger() : 0;
+
+def retryDelaySecs = "<% out.print(retryDelay); %>";
+retryDelaySecs = retryDelaySecs.isInteger() ? retryDelaySecs.toInteger() : 1;
+
+@Field int numRecordsFromResultSet = 0;
+
+List<Object[]> getNextBatch(data, batchSz, resultSetColumnNames) throws Exception {
+    int recordCount = 0;
+    numRecordsFromResultSet = 0;
+    ArrayList<Object[]> recs = new ArrayList<Object[]>();
+    while (recordCount < batchSz && data.next()) {
+        Object[] o = new Object[resultSetColumnNames.length];
+        for (int i = 0; i < resultSetColumnNames.length; i++) {
+            o[i] = data.getObject(resultSetColumnNames[i]);
+            if (o[i] instanceof Date) {
+                Date date = (Date) o[i];
+                Calendar cal = Calendar.getInstance();
+                date.setTime(date.getTime() + cal.get(Calendar.ZONE_OFFSET));
+            }
+        }
+        recs.add(o);
+        recordCount++;
+    }
+    numRecordsFromResultSet = recordCount;
+        
+    return recs;
+}
+        
+String[] getResultSetColumnNames(ResultSet rs) throws SQLException {
+    ResultSetMetaData rsmd = rs.getMetaData();
+    int colCount = rsmd.getColumnCount();
+    String[] cols = new String[colCount];
+    for (int i = 0; i < colCount; i++) {
+        cols[i] = rsmd.getColumnLabel(i + 1);
+    }
+    return cols;
+}
+
+byte[] getBytes(List<Object[]> recs) throws IOException {
+    ByteArrayOutputStream baos = new ByteArrayOutputStream();
+    ObjectOutputStream oos = new ObjectOutputStream(baos);
+    for (int i = 0; i < recs.size(); i++) {
+        oos.writeObject(recs.get(i));
+    }
+    oos.flush();
+    oos.close();
+    return baos.toByteArray();
+}
+
+
+
+def expressionTargetMappingPositions = "[";
+String[] stagingExpressions = """<%=odiRef.getTargetColList("", "[EXPRESSION]", ",", "")%>""".split(",");
+int expressionMappingCount = 0;
+for (String expression : stagingExpressions) {
+    if (expression!=null && !expression.equals("")) {
+        expressionMappingCount++;
+         expressionTargetMappingPositions += expressionMappingCount + ",";
+    } else
+        expressionTargetMappingPositions+= "0,";
+        
+}	
+expressionTargetMappingPositions += "]";
+
+def sql= """select <%=odiRef.getPop("DISTINCT_ROWS") %>  <%=odiRef.getColList("", "[EXPRESSION]", ",", "", "INS and !TRG") %> from <%=odiRef.getFrom() %>  where 	(1=1) <%=odiRef.getFilter() %> <%=odiRef.getJrnFilter() %> <%=odiRef.getJoin() %> <%=odiRef.getGrpBy() %> <%=odiRef.getHaving() %>"""
+def srcConn = odiRef.getJDBCConnection("SRC");
+def stmt = srcConn.createStatement();
+
+def srcFetchSize = <?if("".equals(odiRef.getInfo("SRC_FETCH_ARRAY"))){out.print("1000");}else{out.print(odiRef.getInfo("SRC_FETCH_ARRAY"));}?>;
+
+stmt.setFetchSize(srcFetchSize);
+def rs = stmt.executeQuery(sql);
+
+String[] rsColNames = getResultSetColumnNames(rs);
+StringBuilder recStats = new StringBuilder();
+recStats.append("{ \"stats\" : [");
+
+JSONObject reqData;
+if("T".equalsIgnoreCase("<% out.print(tgtType); %>")) {
+
+    pkColumns = "<% out.print(pkColumns); %>";
+    ukColumns = "<% out.print(ukColumns); %>";
+
+    def tableSendModel = new BICSDataLoadTableModel();
+    reqData = tableSendModel.getDataloadTableJson(getAsList(expressionTargetMappingPositions), getAsList(tgtColNames), getAsList(tgtColPositions),
+          getAsList(pkColumns) as List,  getAsList(ukColumns) as List, [] as List, removeDupTableData);
+}
+
+def hasMoreResults = true;
+def firstBatch = true;
+
+while(hasMoreResults) {
+
+   byte[] data = getBytes(getNextBatch(rs, batchSize, rsColNames));
+
+   if (data==null || data.size() == 0) break;
+     
+    if("D".equalsIgnoreCase("<% out.print(tgtType); %>")) {
+        def datasetSendModel = new BICSDataLoadDatasetModel();
+        reqData = datasetSendModel.getDataloadDatasetJson(getAsList(expressionTargetMappingPositions), getAsList(tgtColNames), getAsList(tgtColTypes), 
+            getAsList(tgtColLengths), getAsList(tgtColScales), getAsList(tgtColPositions), firstBatch, 
+            (numRecordsFromResultSet < batchSize));
+    }
+    
+    logInfo(reqData.toString());
+    
+    firstBatch = false;
+
+    ByteArrayOutputStream responseStream;
+
+    int batchNumRetries = numRetries;
+    while(batchNumRetries >= 0) {
+        try {
+            def topPart = new RestReqBodyPart("top", IOUtils.toInputStream(reqData.toString()));
+            topPart.setBodyPartContentType("application/json");
+            def dataPart = new RestReqBodyPart("data", new ByteArrayInputStream(data));
+            dataPart.setBodyPartContentType("application/octet-stream");
+            responseStream = new ByteArrayOutputStream(256);
+            invokeRESTSendData(topPart, dataPart, responseStream);
+            break;
+        } catch (Exception ex) {
+            logInfo(ex.toString());
+            logInfo("Number of retries available = " + batchNumRetries);
+            if (batchNumRetries <= 0) {
+                throw new OdiKMException("ODIKM-BICS-1000", convertExceptionToString(ex));
+	    }
+        }
+        --batchNumRetries;
+        Thread.sleep((retryDelaySecs * 1000));
+    }
+
+    String bicsStats = responseStream == null ? "{}" : responseStream.toString("UTF-8");
+    logInfo(bicsStats);
+    
+    //BICS returns statistics only for Tables
+    if("T".equalsIgnoreCase("<% out.print(tgtType); %>")) {        
+        recStats.append(bicsStats);
+        recStats.append(",\n");        
+    }
+
+    //Exit loading if current batch fails.
+    if ("T".equalsIgnoreCase("<% out.print(tgtType); %>") && loadingFailed(bicsStats)) break;       
+
+    if(numRecordsFromResultSet < batchSize)
+        hasMoreResults = false;
+                
+
+}
+recStats.append("] }");
+
+boolean loadingFailed(String response) {
+    JSONObject statsContainer = new JSONObject(response); 
+    def status = statsContainer.getString("status"); 
+    return status!=null && "Failed".equalsIgnoreCase(status);
+}
+
+@Field long insertedRows = 0;
+@Field long updatedRows = 0;
+@Field long startTimeMiliseconds = 0;
+@Field long endTimeMiliseconds = 0;
+@Field long duration = 0;
+@Field long failedRows = 0;
+
+void processStatistics(statsString) {
+    JSONObject statsContainer = new JSONObject(statsString); 
+    JSONArray statsArray = statsContainer.get(STATS);
+    for (int i = 0; i < statsArray.length(); i++) {
+	insertedRows += statsArray.getJSONObject(i).getInt(STATS_INSERTED_ROWS);
+	updatedRows += statsArray.getJSONObject(i).getInt(STATS_UPDATED_ROWS);
+        failedRows += statsArray.getJSONObject(i).getInt(STATS_FAILED_ROWS);
+        if(startTimeMiliseconds <= 0)
+	    startTimeMiliseconds = statsArray.getJSONObject(i).getLong(STATS_START_TIME);
+	endTimeMiliseconds = statsArray.getJSONObject(i).getLong(STATS_END_TIME);
+        duration += (endTimeMiliseconds - startTimeMiliseconds);
+    }
+}
+processStatistics(recStats.toString());
+
+odiRef.setNbInsert(insertedRows);
+odiRef.setNbUpdate(updatedRows);
+odiRef.setNbDelete(0);
+odiRef.setNbErrors(failedRows);
+odiRef.setNbRows(insertedRows + updatedRows + failedRows);
+
+logInfo("Number of rows inserted:" + insertedRows);
+logInfo("Number of rows updated:" + updatedRows);   
+logInfo("Number of rows in error:" + failedRows);   
+
+rs.close();
+stmt.close();]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpLineTrt">
+		<Field name="AlwaysExe" type="java.lang.String"><![CDATA[1]]></Field>
+	<Field name="BrpId" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="ColConnectId" type="java.lang.String">null</Field>
+	<Field name="ColContextCode" type="java.lang.String">null</Field>
+	<Field name="ColIndCommit" type="java.lang.String">null</Field>
+	<Field name="ColIsolLevel" type="java.lang.String">null</Field>
+	<Field name="ColITxt" type="com.sunopsis.sql.DbInt"><![CDATA[2873]]></Field>
+	<Field name="ColLanguage" type="java.lang.String">null</Field>
+	<Field name="ColLschemaName" type="java.lang.String">null</Field>
+	<Field name="ColTechno" type="java.lang.String">null</Field>
+	<Field name="DefConnectId" type="java.lang.String">null</Field>
+	<Field name="DefContextCode" type="java.lang.String">null</Field>
+	<Field name="DefIndCommit" type="java.lang.String">null</Field>
+	<Field name="DefIsolLevel" type="java.lang.String">null</Field>
+	<Field name="DefITxt" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="DefLanguage" type="java.lang.String">null</Field>
+	<Field name="DefLschemaName" type="java.lang.String">null</Field>
+	<Field name="DefTechno" type="java.lang.String"><![CDATA[ORACLE_BICS]]></Field>
+	<Field name="ExeChannel" type="java.lang.String">null</Field>
+	<Field name="FirstDate" type="java.sql.Timestamp"><![CDATA[2021-08-27 16:47:03.0]]></Field>
+	<Field name="FirstUser" type="java.lang.String"><![CDATA[SUPERVISOR]]></Field>
+	<Field name="GlobalId" type="java.lang.String"><![CDATA[def8ed52-533b-4eeb-aea0-db610e31b64b]]></Field>
+	<Field name="IndErr" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="IndLogFinalCmd" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="IndLogNb" type="java.lang.String">null</Field>
+	<Field name="ILineTrt" type="com.sunopsis.sql.DbInt"><![CDATA[1307]]></Field>
+	<Field name="IRefLineTrt" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="IRefTrt" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="ITrt" type="com.sunopsis.sql.DbInt"><![CDATA[218]]></Field>
+	<Field name="KcmAk" type="java.lang.String">null</Field>
+	<Field name="KcmCond" type="java.lang.String">null</Field>
+	<Field name="KcmErrDel" type="java.lang.String">null</Field>
+	<Field name="KcmJoin" type="java.lang.String">null</Field>
+	<Field name="KcmNull" type="java.lang.String">null</Field>
+	<Field name="KcmPk" type="java.lang.String">null</Field>
+	<Field name="KimDrvdSel" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="KimIdx" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="KimJrn" type="java.lang.String"><![CDATA[1]]></Field>
+	<Field name="KimJrnPop" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="KjmCreate" type="java.lang.String">null</Field>
+	<Field name="KjmDrop" type="java.lang.String">null</Field>
+	<Field name="KjmExtend" type="java.lang.String">null</Field>
+	<Field name="KjmInstall" type="java.lang.String">null</Field>
+	<Field name="KjmLock" type="java.lang.String">null</Field>
+	<Field name="KjmPurge" type="java.lang.String">null</Field>
+	<Field name="KjmSetInstall" type="java.lang.String">null</Field>
+	<Field name="KjmSetUninstall" type="java.lang.String">null</Field>
+	<Field name="KjmSubscribe" type="java.lang.String">null</Field>
+	<Field name="KjmTableOrder" type="java.lang.String">null</Field>
+	<Field name="KjmUninstall" type="java.lang.String">null</Field>
+	<Field name="KjmUnlock" type="java.lang.String">null</Field>
+	<Field name="KjmUnsubscribe" type="java.lang.String">null</Field>
+	<Field name="KlmAfterInt" type="java.lang.String">null</Field>
+	<Field name="KlmIdx" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="KlmJrn" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="LastDate" type="java.sql.Timestamp"><![CDATA[2021-08-27 16:47:03.0]]></Field>
+	<Field name="LastUser" type="java.lang.String"><![CDATA[SUPERVISOR]]></Field>
+	<Field name="LineType" type="java.lang.String"><![CDATA[I]]></Field>
+	<Field name="LogLevDet" type="java.lang.String"><![CDATA[3]]></Field>
+	<Field name="MapTaskType" type="java.lang.String"><![CDATA[EM]]></Field>
+	<Field name="OrdTrt" type="com.sunopsis.sql.DbInt"><![CDATA[10]]></Field>
+	<Field name="SqlName" type="java.lang.String"><![CDATA[Lock Journalized Table]]></Field>
+	<Field name="SupportedSubtypes" type="java.lang.String">null</Field>
+	<Field name="VariableDefs" type="java.lang.String">null</Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpTxtHeader">
+		<Field name="Enc" type="java.lang.String">null</Field>
+	<Field name="EncKey" type="java.lang.String">null</Field>
+ <Field name="EncKeyVect" type="java.lang.String">null</Field>
+	<Field name="GlobalId" type="java.lang.String"><![CDATA[e9ee4730-eb96-4b56-ad05-5f6b5fb5af39]]></Field>
+	<Field name="ITxt" type="com.sunopsis.sql.DbInt"><![CDATA[2873]]></Field>
+	<Field name="ITxtOrig" type="com.sunopsis.sql.DbInt"><![CDATA[103]]></Field>
+	<Field name="SqlIndGrp" type="java.lang.String"><![CDATA[2]]></Field>
+ <Field name="Txt" type="java.lang.String"><![CDATA[<% if ("C".equals(odiRef.getJrnInfo( "JRN_METHOD"))) { %> 
+/* Consistant journalization detected. */
+/* Lock should be done by a specific step in a package */ 
+<% } else { %>
+update	<%=odiRef.getTable( "L" , "JRN_NAME" , "A" )%>
+set	JRN_CONSUMED = '1'
+where (1=1)
+<%=odiRef.getJrnFilter()%>
+<% } %>]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpLineTrt">
+		<Field name="AlwaysExe" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="BrpId" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="ColConnectId" type="java.lang.String">null</Field>
+	<Field name="ColContextCode" type="java.lang.String">null</Field>
+	<Field name="ColIndCommit" type="java.lang.String">null</Field>
+	<Field name="ColIsolLevel" type="java.lang.String">null</Field>
+	<Field name="ColITxt" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="ColLanguage" type="java.lang.String">null</Field>
+	<Field name="ColLschemaName" type="java.lang.String">null</Field>
+	<Field name="ColTechno" type="java.lang.String">null</Field>
+	<Field name="DefConnectId" type="java.lang.String">null</Field>
+	<Field name="DefContextCode" type="java.lang.String">null</Field>
+	<Field name="DefIndCommit" type="java.lang.String">null</Field>
+	<Field name="DefIsolLevel" type="java.lang.String">null</Field>
+	<Field name="DefITxt" type="com.sunopsis.sql.DbInt"><![CDATA[2874]]></Field>
+	<Field name="DefLanguage" type="java.lang.String"><![CDATA[GROOVY]]></Field>
+	<Field name="DefLschemaName" type="java.lang.String">null</Field>
+	<Field name="DefTechno" type="java.lang.String"><![CDATA[GROOVY]]></Field>
+	<Field name="ExeChannel" type="java.lang.String">null</Field>
+	<Field name="FirstDate" type="java.sql.Timestamp"><![CDATA[2021-08-27 16:47:03.0]]></Field>
+	<Field name="FirstUser" type="java.lang.String"><![CDATA[SUPERVISOR]]></Field>
+	<Field name="GlobalId" type="java.lang.String"><![CDATA[7e24505a-1c4f-4012-b5d6-4d11ca13bed0]]></Field>
+	<Field name="IndErr" type="java.lang.String"><![CDATA[1]]></Field>
+	<Field name="IndLogFinalCmd" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="IndLogNb" type="java.lang.String">null</Field>
+	<Field name="ILineTrt" type="com.sunopsis.sql.DbInt"><![CDATA[1308]]></Field>
+	<Field name="IRefLineTrt" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="IRefTrt" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="ITrt" type="com.sunopsis.sql.DbInt"><![CDATA[218]]></Field>
+	<Field name="KcmAk" type="java.lang.String">null</Field>
+	<Field name="KcmCond" type="java.lang.String">null</Field>
+	<Field name="KcmErrDel" type="java.lang.String">null</Field>
+	<Field name="KcmJoin" type="java.lang.String">null</Field>
+	<Field name="KcmNull" type="java.lang.String">null</Field>
+	<Field name="KcmPk" type="java.lang.String">null</Field>
+	<Field name="KimDrvdSel" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="KimIdx" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="KimJrn" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="KimJrnPop" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="KjmCreate" type="java.lang.String">null</Field>
+	<Field name="KjmDrop" type="java.lang.String">null</Field>
+	<Field name="KjmExtend" type="java.lang.String">null</Field>
+	<Field name="KjmInstall" type="java.lang.String">null</Field>
+	<Field name="KjmLock" type="java.lang.String">null</Field>
+	<Field name="KjmPurge" type="java.lang.String">null</Field>
+	<Field name="KjmSetInstall" type="java.lang.String">null</Field>
+	<Field name="KjmSetUninstall" type="java.lang.String">null</Field>
+	<Field name="KjmSubscribe" type="java.lang.String">null</Field>
+	<Field name="KjmTableOrder" type="java.lang.String">null</Field>
+	<Field name="KjmUninstall" type="java.lang.String">null</Field>
+	<Field name="KjmUnlock" type="java.lang.String">null</Field>
+	<Field name="KjmUnsubscribe" type="java.lang.String">null</Field>
+	<Field name="KlmAfterInt" type="java.lang.String">null</Field>
+	<Field name="KlmIdx" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="KlmJrn" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="LastDate" type="java.sql.Timestamp"><![CDATA[2021-08-27 16:47:03.0]]></Field>
+	<Field name="LastUser" type="java.lang.String"><![CDATA[SUPERVISOR]]></Field>
+	<Field name="LineType" type="java.lang.String"><![CDATA[I]]></Field>
+	<Field name="LogLevDet" type="java.lang.String"><![CDATA[3]]></Field>
+	<Field name="MapTaskType" type="java.lang.String"><![CDATA[EM]]></Field>
+	<Field name="OrdTrt" type="com.sunopsis.sql.DbInt"><![CDATA[30]]></Field>
+	<Field name="SqlName" type="java.lang.String"><![CDATA[Drop target]]></Field>
+	<Field name="SupportedSubtypes" type="java.lang.String">null</Field>
+	<Field name="VariableDefs" type="java.lang.String">null</Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpTxtHeader">
+		<Field name="Enc" type="java.lang.String">null</Field>
+	<Field name="EncKey" type="java.lang.String">null</Field>
+ <Field name="EncKeyVect" type="java.lang.String">null</Field>
+	<Field name="GlobalId" type="java.lang.String"><![CDATA[bf0238ca-1a23-402a-9513-ea9db4e2e64e]]></Field>
+	<Field name="ITxt" type="com.sunopsis.sql.DbInt"><![CDATA[2874]]></Field>
+	<Field name="ITxtOrig" type="com.sunopsis.sql.DbInt"><![CDATA[102]]></Field>
+	<Field name="SqlIndGrp" type="java.lang.String"><![CDATA[2]]></Field>
+ <Field name="Txt" type="java.lang.String"><![CDATA[import oracle.odi.runtime.rest.InternalInvokeRESTfulService;
+import org.apache.commons.io.IOUtils;
+import java.io.ByteArrayOutputStream;
+
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.nio.file.StandardOpenOption;
+
+void invokeRESTDropContainer(responseOutputStream) {
+    def reqTemplateName = "tablename";
+    def dropContainerOperation = "odi_bics_drop_table";
+    def tableName = "<% out.print(tgtTable); %>";
+    if("D".equalsIgnoreCase("<% out.print(tgtType); %>")) {
+        reqTemplateName = "setname";
+        dropContainerOperation = "odi_bics_drop_dataset";
+    } else
+        tableName = tableName.toUpperCase();
+
+    def restCall = new InternalInvokeRESTfulService();
+
+    odiRef.configureTool(restCall);
+    restCall.setContext("<% out.print(bicsContext); %>");
+    restCall.setLSchema("<% out.print(logicalSchema); %>");
+    restCall.setOperation(dropContainerOperation);
+    restCall.setResponseStream(responseOutputStream);
+
+    def restParameters = new Vector();
+    restParameters.add(["-HEADER.X-ID-TENANT-NAME", "<% out.print(bicsDomain); %>"] as String[]);
+    restParameters.add(["-REQUEST_TEMPLATE." + reqTemplateName, tableName] as String[]);
+
+    restCall.setParameters(restParameters);
+    
+    def traceLoc = "<% out.print(traceFileLoc); %>";
+    if(! ("".equals(traceLoc) ) ) {
+        restCall.setTraceStream(Files.newOutputStream(Paths.get(traceLoc), StandardOpenOption.CREATE, StandardOpenOption.APPEND));
+    }
+
+    
+    restCall.execute(); 
+}
+
+ByteArrayOutputStream responseStream = new ByteArrayOutputStream(256);
+
+invokeRESTDropContainer(responseStream);
+
+odiRef.getLogger().log(java.util.logging.Level.INFO, "[Drop Target]" + responseStream.toString("UTF-8"));]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpLineTrt">
+		<Field name="AlwaysExe" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="BrpId" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="ColConnectId" type="java.lang.String">null</Field>
+	<Field name="ColContextCode" type="java.lang.String">null</Field>
+	<Field name="ColIndCommit" type="java.lang.String">null</Field>
+	<Field name="ColIsolLevel" type="java.lang.String">null</Field>
+	<Field name="ColITxt" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="ColLanguage" type="java.lang.String">null</Field>
+	<Field name="ColLschemaName" type="java.lang.String">null</Field>
+	<Field name="ColTechno" type="java.lang.String">null</Field>
+	<Field name="DefConnectId" type="java.lang.String">null</Field>
+	<Field name="DefContextCode" type="java.lang.String">null</Field>
+	<Field name="DefIndCommit" type="java.lang.String">null</Field>
+	<Field name="DefIsolLevel" type="java.lang.String">null</Field>
+	<Field name="DefITxt" type="com.sunopsis.sql.DbInt"><![CDATA[2875]]></Field>
+	<Field name="DefLanguage" type="java.lang.String"><![CDATA[GROOVY]]></Field>
+	<Field name="DefLschemaName" type="java.lang.String">null</Field>
+	<Field name="DefTechno" type="java.lang.String"><![CDATA[GROOVY]]></Field>
+	<Field name="ExeChannel" type="java.lang.String">null</Field>
+	<Field name="FirstDate" type="java.sql.Timestamp"><![CDATA[2021-08-27 16:47:03.0]]></Field>
+	<Field name="FirstUser" type="java.lang.String"><![CDATA[SUPERVISOR]]></Field>
+	<Field name="GlobalId" type="java.lang.String"><![CDATA[d5e03296-e02f-49a6-a0c5-0f2b8d8678d2]]></Field>
+	<Field name="IndErr" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="IndLogFinalCmd" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="IndLogNb" type="java.lang.String">null</Field>
+	<Field name="ILineTrt" type="com.sunopsis.sql.DbInt"><![CDATA[1309]]></Field>
+	<Field name="IRefLineTrt" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="IRefTrt" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="ITrt" type="com.sunopsis.sql.DbInt"><![CDATA[218]]></Field>
+	<Field name="KcmAk" type="java.lang.String">null</Field>
+	<Field name="KcmCond" type="java.lang.String">null</Field>
+	<Field name="KcmErrDel" type="java.lang.String">null</Field>
+	<Field name="KcmJoin" type="java.lang.String">null</Field>
+	<Field name="KcmNull" type="java.lang.String">null</Field>
+	<Field name="KcmPk" type="java.lang.String">null</Field>
+	<Field name="KimDrvdSel" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="KimIdx" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="KimJrn" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="KimJrnPop" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="KjmCreate" type="java.lang.String">null</Field>
+	<Field name="KjmDrop" type="java.lang.String">null</Field>
+	<Field name="KjmExtend" type="java.lang.String">null</Field>
+	<Field name="KjmInstall" type="java.lang.String">null</Field>
+	<Field name="KjmLock" type="java.lang.String">null</Field>
+	<Field name="KjmPurge" type="java.lang.String">null</Field>
+	<Field name="KjmSetInstall" type="java.lang.String">null</Field>
+	<Field name="KjmSetUninstall" type="java.lang.String">null</Field>
+	<Field name="KjmSubscribe" type="java.lang.String">null</Field>
+	<Field name="KjmTableOrder" type="java.lang.String">null</Field>
+	<Field name="KjmUninstall" type="java.lang.String">null</Field>
+	<Field name="KjmUnlock" type="java.lang.String">null</Field>
+	<Field name="KjmUnsubscribe" type="java.lang.String">null</Field>
+	<Field name="KlmAfterInt" type="java.lang.String">null</Field>
+	<Field name="KlmIdx" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="KlmJrn" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="LastDate" type="java.sql.Timestamp"><![CDATA[2021-08-27 16:47:03.0]]></Field>
+	<Field name="LastUser" type="java.lang.String"><![CDATA[SUPERVISOR]]></Field>
+	<Field name="LineType" type="java.lang.String"><![CDATA[I]]></Field>
+	<Field name="LogLevDet" type="java.lang.String"><![CDATA[3]]></Field>
+	<Field name="MapTaskType" type="java.lang.String"><![CDATA[EM]]></Field>
+	<Field name="OrdTrt" type="com.sunopsis.sql.DbInt"><![CDATA[60]]></Field>
+	<Field name="SqlName" type="java.lang.String"><![CDATA[Truncate target table]]></Field>
+	<Field name="SupportedSubtypes" type="java.lang.String">null</Field>
+	<Field name="VariableDefs" type="java.lang.String">null</Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpTxtHeader">
+		<Field name="Enc" type="java.lang.String">null</Field>
+	<Field name="EncKey" type="java.lang.String">null</Field>
+ <Field name="EncKeyVect" type="java.lang.String">null</Field>
+	<Field name="GlobalId" type="java.lang.String"><![CDATA[b05e9d35-4cdf-4f5c-948b-cbb6f48946e4]]></Field>
+	<Field name="ITxt" type="com.sunopsis.sql.DbInt"><![CDATA[2875]]></Field>
+	<Field name="ITxtOrig" type="com.sunopsis.sql.DbInt"><![CDATA[102]]></Field>
+	<Field name="SqlIndGrp" type="java.lang.String"><![CDATA[2]]></Field>
+ <Field name="Txt" type="java.lang.String"><![CDATA[import oracle.odi.runtime.rest.InternalInvokeRESTfulService;
+import org.apache.commons.io.IOUtils;
+import java.io.ByteArrayOutputStream;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.nio.file.StandardOpenOption;
+
+void invokeRESTTruncateTable(responseOutputStream) {
+    def truncateTableOperation = "odi_bics_table_truncate";
+    def restCall = new InternalInvokeRESTfulService();
+    odiRef.configureTool(restCall);
+    restCall.setContext("<% out.print(bicsContext); %>");
+    restCall.setLSchema("<% out.print(logicalSchema); %>");
+    restCall.setOperation(truncateTableOperation);
+    restCall.setResponseStream(responseOutputStream);
+    def restParameters = new Vector();
+    restParameters.add(["-HEADER.X-ID-TENANT-NAME", "<% out.print(bicsDomain); %>"] as String[]);
+    restParameters.add(["-REQUEST_TEMPLATE.tablename", "<% out.print(tgtTable); %>".toUpperCase()] as String[]);
+
+    restCall.setParameters(restParameters);
+
+    def traceLoc = "<% out.print(traceFileLoc); %>";
+    if(! ("".equals(traceLoc) ) ) {
+        restCall.setTraceStream(Files.newOutputStream(Paths.get(traceLoc), StandardOpenOption.CREATE, StandardOpenOption.APPEND));
+    }
+    
+    restCall.execute(); 
+}
+
+void logInfo (String message) {
+    odiRef.getLogger().log(java.util.logging.Level.INFO, "[Truncate Target]" + message);
+}
+
+if ("T".equals("<% out.print(tgtType); %>")) {
+    ByteArrayOutputStream responseStream = new ByteArrayOutputStream(256);
+    invokeRESTTruncateTable(responseStream);
+    
+    logInfo(responseStream.toString("UTF-8")) ;
+}]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpLineTrt">
+		<Field name="AlwaysExe" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="BrpId" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="ColConnectId" type="java.lang.String">null</Field>
+	<Field name="ColContextCode" type="java.lang.String">null</Field>
+	<Field name="ColIndCommit" type="java.lang.String">null</Field>
+	<Field name="ColIsolLevel" type="java.lang.String">null</Field>
+	<Field name="ColITxt" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="ColLanguage" type="java.lang.String">null</Field>
+	<Field name="ColLschemaName" type="java.lang.String">null</Field>
+	<Field name="ColTechno" type="java.lang.String">null</Field>
+	<Field name="DefConnectId" type="java.lang.String">null</Field>
+	<Field name="DefContextCode" type="java.lang.String">null</Field>
+	<Field name="DefIndCommit" type="java.lang.String">null</Field>
+	<Field name="DefIsolLevel" type="java.lang.String">null</Field>
+	<Field name="DefITxt" type="com.sunopsis.sql.DbInt"><![CDATA[2876]]></Field>
+	<Field name="DefLanguage" type="java.lang.String"><![CDATA[GROOVY]]></Field>
+	<Field name="DefLschemaName" type="java.lang.String">null</Field>
+	<Field name="DefTechno" type="java.lang.String"><![CDATA[GROOVY]]></Field>
+	<Field name="ExeChannel" type="java.lang.String">null</Field>
+	<Field name="FirstDate" type="java.sql.Timestamp"><![CDATA[2021-08-27 16:47:03.0]]></Field>
+	<Field name="FirstUser" type="java.lang.String"><![CDATA[SUPERVISOR]]></Field>
+	<Field name="GlobalId" type="java.lang.String"><![CDATA[32715711-4ae7-4381-9b7c-f583545a4305]]></Field>
+	<Field name="IndErr" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="IndLogFinalCmd" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="IndLogNb" type="java.lang.String">null</Field>
+	<Field name="ILineTrt" type="com.sunopsis.sql.DbInt"><![CDATA[1310]]></Field>
+	<Field name="IRefLineTrt" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="IRefTrt" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="ITrt" type="com.sunopsis.sql.DbInt"><![CDATA[218]]></Field>
+	<Field name="KcmAk" type="java.lang.String">null</Field>
+	<Field name="KcmCond" type="java.lang.String">null</Field>
+	<Field name="KcmErrDel" type="java.lang.String">null</Field>
+	<Field name="KcmJoin" type="java.lang.String">null</Field>
+	<Field name="KcmNull" type="java.lang.String">null</Field>
+	<Field name="KcmPk" type="java.lang.String">null</Field>
+	<Field name="KimDrvdSel" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="KimIdx" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="KimJrn" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="KimJrnPop" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="KjmCreate" type="java.lang.String">null</Field>
+	<Field name="KjmDrop" type="java.lang.String">null</Field>
+	<Field name="KjmExtend" type="java.lang.String">null</Field>
+	<Field name="KjmInstall" type="java.lang.String">null</Field>
+	<Field name="KjmLock" type="java.lang.String">null</Field>
+	<Field name="KjmPurge" type="java.lang.String">null</Field>
+	<Field name="KjmSetInstall" type="java.lang.String">null</Field>
+	<Field name="KjmSetUninstall" type="java.lang.String">null</Field>
+	<Field name="KjmSubscribe" type="java.lang.String">null</Field>
+	<Field name="KjmTableOrder" type="java.lang.String">null</Field>
+	<Field name="KjmUninstall" type="java.lang.String">null</Field>
+	<Field name="KjmUnlock" type="java.lang.String">null</Field>
+	<Field name="KjmUnsubscribe" type="java.lang.String">null</Field>
+	<Field name="KlmAfterInt" type="java.lang.String">null</Field>
+	<Field name="KlmIdx" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="KlmJrn" type="java.lang.String"><![CDATA[0]]></Field>
+	<Field name="LastDate" type="java.sql.Timestamp"><![CDATA[2021-08-27 16:47:03.0]]></Field>
+	<Field name="LastUser" type="java.lang.String"><![CDATA[SUPERVISOR]]></Field>
+	<Field name="LineType" type="java.lang.String"><![CDATA[I]]></Field>
+	<Field name="LogLevDet" type="java.lang.String"><![CDATA[3]]></Field>
+	<Field name="MapTaskType" type="java.lang.String"><![CDATA[EM]]></Field>
+	<Field name="OrdTrt" type="com.sunopsis.sql.DbInt"><![CDATA[40]]></Field>
+	<Field name="SqlName" type="java.lang.String"><![CDATA[Create target]]></Field>
+	<Field name="SupportedSubtypes" type="java.lang.String">null</Field>
+	<Field name="VariableDefs" type="java.lang.String">null</Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpTxtHeader">
+		<Field name="Enc" type="java.lang.String">null</Field>
+	<Field name="EncKey" type="java.lang.String">null</Field>
+ <Field name="EncKeyVect" type="java.lang.String">null</Field>
+	<Field name="GlobalId" type="java.lang.String"><![CDATA[9027ba35-af0a-4910-9a6e-570265c38bf0]]></Field>
+	<Field name="ITxt" type="com.sunopsis.sql.DbInt"><![CDATA[2876]]></Field>
+	<Field name="ITxtOrig" type="com.sunopsis.sql.DbInt"><![CDATA[102]]></Field>
+	<Field name="SqlIndGrp" type="java.lang.String"><![CDATA[2]]></Field>
+ <Field name="Txt" type="java.lang.String"><![CDATA[import org.codehaus.jettison.json.JSONObject;
+import org.codehaus.jettison.json.JSONArray;
+import oracle.odi.runtime.rest.InternalInvokeRESTfulService;
+import org.apache.commons.io.IOUtils;
+import java.io.ByteArrayOutputStream;
+import oracle.odi.runtime.rest.RestReqBodyPart;
+import java.util.List;
+
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.nio.file.StandardOpenOption;
+
+def allColNames = "<%=odiRef.getAllTargetColList("[", "[COL_NAME]", ",", "]")%>";
+def allColTypes = "<%=odiRef.getAllTargetColList("[", "[DEST_DT]", ",", "]")%>";
+def allColScales = "<%=odiRef.getAllTargetColList("[", " [SCALE]", ",", "]")%>";
+def allColLengths = "<%=odiRef.getAllTargetColList("[", " [LONGC]", ",", "]")%>";
+def allColNullable = "<%=odiRef.getAllTargetColList("[", "[COL_MANDATORY]", ",", "]")%>";
+def allColDefault = "<%=odiRef.getAllTargetColList("[", " [DEF_VALUE]", ",", "]")%>";
+def allColPosition = "<%=odiRef.getAllTargetColList("[", "[POS]", ",", "]")%>";
+
+void invokeRESTWithJson(requestInputStream, responseOutputStream) {
+    def reqTemplateName = "tablename";
+    def createContainerOperation = "odi_bics_create_table";
+    if("D".equalsIgnoreCase("<% out.print(tgtType); %>")) {
+        reqTemplateName = "setname";
+        createContainerOperation = "odi_bics_create_dataset";
+    }
+    
+    def restCall = new InternalInvokeRESTfulService();    
+    odiRef.configureTool(restCall);
+    
+    restCall.setContext("<% out.print(bicsContext); %>");    
+    restCall.setLSchema("<% out.print(logicalSchema); %>");
+    restCall.setOperation(createContainerOperation);
+    
+    if("T".equals("<% out.print(tgtType); %>"))
+        restCall.setRequestBodyStream(requestInputStream, "UTF-8");
+    else {
+        def reqJsonPart = new RestReqBodyPart("top", requestInputStream);
+        reqJsonPart.setBodyPartContentType("application/json");
+        restCall.setReqBodyPartDetails([reqJsonPart] as List);
+    }
+    restCall.setResponseStream(responseOutputStream);
+    def restParameters = new Vector();
+    restParameters.add(["-HEADER.X-ID-TENANT-NAME", "<% out.print(bicsDomain); %>"] as String[]);
+    if("T".equals("<% out.print(tgtType); %>"))
+        restParameters.add(["-HEADER.Content-Type", "application/json"] as String[]);
+    else
+        restParameters.add(["-HEADER.Content-Type", "multipart/mixed"] as String[]);
+    restParameters.add(["-REQUEST_TEMPLATE." + reqTemplateName, "<% out.print(tgtTable); %>"] as String[]);
+
+    restCall.setParameters(restParameters);
+
+    def traceLoc = "<% out.print(traceFileLoc); %>";
+    if(!"".equals(traceLoc)) {
+        restCall.setTraceStream(Files.newOutputStream(Paths.get(traceLoc), StandardOpenOption.CREATE, StandardOpenOption.APPEND));
+    }
+    
+    restCall.execute(); 
+}
+
+
+List getAsList(input) {
+    if (input==null || "".equals(input))
+    input = "[]";
+    
+    return input[1..-2].tokenize(',')*.toString();
+}
+
+class BICSTableModel {
+    static final String COLUMN_NULLABLE_KEY = "nullable";
+    static final String COLUMN_DEFAULT_VAL_KEY = "defaultValue";
+    
+    public JSONArray getTableCreationJson(columnNameList, columnDatatypeList, columnDatatypeLengthList,
+		columnDatatypeScaleList, columnNullableList, columnDefaultValueList) {
+        int numColumns = columnNameList.size();
+	JSONArray columnsArray = new JSONArray();
+	for(int i=0; i< numColumns; i++) {
+            String columnName = columnNameList[i] == null ? "" : columnNameList[i].trim();
+            String dataType = columnDatatypeList[i] == null ? "" : columnDatatypeList[i].trim();
+            String datatypeLength = columnDatatypeLengthList[i] == null ? "" : columnDatatypeLengthList[i].trim();
+            String datatypeScale = columnDatatypeScaleList[i] == null ? "" : columnDatatypeScaleList[i].trim();
+            String isNullable = columnNullableList[i] == null ? "" : columnNullableList[i].trim();
+            String defaultVal = columnDefaultValueList[i] == null ? "" : columnDefaultValueList[i].trim();
+            if("".equals(columnName))
+	        throw new OdiKMException("ODIKM-BICS-1000", "ODIKM-BICS-1000: Column missing name");
+	    if("".equals(dataType))
+	        throw new OdiKMException("ODIKM-BICS-1001", "ODIKM-BICS-1001: Column " + i + " missing datatype");
+            JSONObject columnInfo = new JSONObject();
+            columnInfo.put("<% out.print(COLUMN_NAME_KEY); %>", columnName);
+            columnInfo.put("<% out.print(COLUMN_DT_KEY); %>", dataType);
+            
+            
+            if("".equals(datatypeLength)) {
+                datatypeLength = "VARCHAR".equalsIgnoreCase(dataType) ? 50 : 10;
+            } 
+            
+            if("NUMBER".equalsIgnoreCase(dataType)) {
+                columnInfo.put("<% out.print(COLUMN_DT_PRECISION_KEY); %>", datatypeScale);    
+            } 
+            
+            if (!"".equalsIgnoreCase(datatypeLength))
+                columnInfo.put("<% out.print(COLUMN_DT_LENGTH_KEY); %>", datatypeLength);
+            
+                
+            columnInfo.put(COLUMN_NULLABLE_KEY, "0".equals(isNullable) ? "true" : "false");
+            
+            columnsArray.put(columnInfo);
+        }
+	return columnsArray;
+    }
+}
+
+class BICSDatasetModel {
+    
+        public JSONObject getDatasetCreationJson(columnNameList, columnDatatypeList, columnDatatypeLengthList,
+		columnDatatypePrecisionList, columnPositionList) {
+            int numColumns = columnNameList.size();
+            JSONObject dataLoadInformation = new JSONObject();
+	    JSONArray columnsArray = new JSONArray();
+	    for(int i=0; i< numColumns; i++) {
+                String columnName = columnNameList[i] == null ? "" : columnNameList[i].trim();
+                String dataType = columnDatatypeList[i] == null ? "" : columnDatatypeList[i].trim();
+                String datatypeLength = columnDatatypeLengthList[i] == null ? "" : columnDatatypeLengthList[i].trim();
+                String datatypePrecision = columnDatatypePrecisionList[i] == null ? "" : columnDatatypePrecisionList[i].trim();
+                String columnPosition = columnPositionList[i] == null ? "null" : columnPositionList[i].trim();
+                if("".equals(columnName))
+	            throw new OdiKMException("ODIKM-BICS-1000", "ODIKM-BICS-1000: Column missing name");
+	        if("".equals(dataType))
+	            throw new OdiKMException("ODIKM-BICS-1001", "ODIKM-BICS-1001: Column " + i + " missing datatype");
+                JSONObject columnInfo = new JSONObject();
+                columnInfo.put("columnName", columnName);
+                columnInfo.put("<% out.print(COLUMN_DT_KEY); %>", dataType);
+
+                if("".equals(datatypeLength) || "0".equals(datatypeLength)) {
+                    datatypeLength = "VARCHAR".equalsIgnoreCase(dataType) ? 50 : 10;
+                }
+
+                columnInfo.put("<% out.print(COLUMN_DT_LENGTH_KEY); %>", datatypeLength);
+
+                if("NUMBER".equalsIgnoreCase(dataType)) {
+                    columnInfo.put("<% out.print(COLUMN_DT_PRECISION_KEY); %>", "".equals(datatypePrecision) ? 
+                        0 : datatypePrecision);
+                } 
+
+                columnInfo.put("<% out.print(COLUMN_POSITION_KEY); %>", columnPosition);
+                columnsArray.put(columnInfo);
+            }
+            dataLoadInformation.put("columns", columnsArray);
+            dataLoadInformation.put("<% out.print(DATASET_FIRST_BATCH); %>", "true");
+            dataLoadInformation.put("<% out.print(DATASET_LAST_BATCH); %>", "true");
+            dataLoadInformation.put("<% out.print(STREAM_DATA_TYPE_KEY); %>", "<% out.print(STREAM_DATA_TYPE_VAL);%>");
+
+	    return dataLoadInformation;
+     }
+}
+
+void logInfo (String message) {
+    odiRef.getLogger().log(java.util.logging.Level.INFO, "[Create Target]" + message);
+}
+
+ByteArrayOutputStream responseStream = new ByteArrayOutputStream(1024);
+
+if("T".equals("<% out.print(tgtType);%>")) {
+    BICSTableModel bicsTableModel = new BICSTableModel();
+    
+    JSONArray json = bicsTableModel.getTableCreationJson(
+        getAsList(allColNames), 
+        getAsList(allColTypes), 
+        getAsList(allColLengths), 
+        getAsList(allColScales),
+        getAsList(allColNullable), 
+        getAsList(allColDefault));
+    
+    logInfo(json.toString());
+        
+    invokeRESTWithJson(IOUtils.toInputStream(json.toString(), "UTF-8"), responseStream);
+    
+} else {
+    BICSDatasetModel bicsDatasetModel = new BICSDatasetModel();
+                
+    JSONObject json = bicsDatasetModel.getDatasetCreationJson(
+        getAsList(allColNames), 
+        getAsList(allColTypes), 
+        getAsList(allColLengths), 
+        getAsList(allColScales), 
+        getAsList(allColPosition));
+
+    logInfo("(dataset)" + json.toString());
+
+    invokeRESTWithJson(IOUtils.toInputStream(json.toString(), "UTF-8"), responseStream);
+
+}
+
+logInfo (responseStream.toString("UTF-8"));]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpLineTrtUe">
+		<Field name="GlobalId" type="java.lang.String"><![CDATA[a9276d8f-e2ad-4928-8f0e-6e18e6b53ad7]]></Field>
+	<Field name="ILineTrt" type="com.sunopsis.sql.DbInt"><![CDATA[1304]]></Field>
+	<Field name="ITrt" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="IUserExit" type="com.sunopsis.sql.DbInt"><![CDATA[1004]]></Field>
+	<Field name="OrdTrt" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpLineTrtUe">
+		<Field name="GlobalId" type="java.lang.String"><![CDATA[fb2a74c1-cdfd-4862-82d8-ed62388118ef]]></Field>
+	<Field name="ILineTrt" type="com.sunopsis.sql.DbInt"><![CDATA[1304]]></Field>
+	<Field name="ITrt" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="IUserExit" type="com.sunopsis.sql.DbInt"><![CDATA[1008]]></Field>
+	<Field name="OrdTrt" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpLineTrtUe">
+		<Field name="GlobalId" type="java.lang.String"><![CDATA[9edaa7f8-60a2-414a-8ca9-93f5f9ac0f66]]></Field>
+	<Field name="ILineTrt" type="com.sunopsis.sql.DbInt"><![CDATA[1304]]></Field>
+	<Field name="ITrt" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="IUserExit" type="com.sunopsis.sql.DbInt"><![CDATA[1002]]></Field>
+	<Field name="OrdTrt" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpLineTrtUe">
+		<Field name="GlobalId" type="java.lang.String"><![CDATA[7381df9e-c283-475b-9122-67a1a9fe91a3]]></Field>
+	<Field name="ILineTrt" type="com.sunopsis.sql.DbInt"><![CDATA[1304]]></Field>
+	<Field name="ITrt" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="IUserExit" type="com.sunopsis.sql.DbInt"><![CDATA[1003]]></Field>
+	<Field name="OrdTrt" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpLineTrtUe">
+		<Field name="GlobalId" type="java.lang.String"><![CDATA[0a7d4e96-cc0c-4141-af3b-4624c0c8bb40]]></Field>
+	<Field name="ILineTrt" type="com.sunopsis.sql.DbInt"><![CDATA[1305]]></Field>
+	<Field name="ITrt" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="IUserExit" type="com.sunopsis.sql.DbInt"><![CDATA[1002]]></Field>
+	<Field name="OrdTrt" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpLineTrtUe">
+		<Field name="GlobalId" type="java.lang.String"><![CDATA[a8277a7d-61e7-4a80-b354-4ccc6384bbda]]></Field>
+	<Field name="ILineTrt" type="com.sunopsis.sql.DbInt"><![CDATA[1305]]></Field>
+	<Field name="ITrt" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="IUserExit" type="com.sunopsis.sql.DbInt"><![CDATA[1003]]></Field>
+	<Field name="OrdTrt" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpLineTrtUe">
+		<Field name="GlobalId" type="java.lang.String"><![CDATA[36cfa607-20d1-4728-895e-752349ab2523]]></Field>
+	<Field name="ILineTrt" type="com.sunopsis.sql.DbInt"><![CDATA[1305]]></Field>
+	<Field name="ITrt" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="IUserExit" type="com.sunopsis.sql.DbInt"><![CDATA[1008]]></Field>
+	<Field name="OrdTrt" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpLineTrtUe">
+		<Field name="GlobalId" type="java.lang.String"><![CDATA[664c0ab6-7a92-472b-b727-d6837f938d0c]]></Field>
+	<Field name="ILineTrt" type="com.sunopsis.sql.DbInt"><![CDATA[1305]]></Field>
+	<Field name="ITrt" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="IUserExit" type="com.sunopsis.sql.DbInt"><![CDATA[1004]]></Field>
+	<Field name="OrdTrt" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpLineTrtUe">
+		<Field name="GlobalId" type="java.lang.String"><![CDATA[90c47593-e9d3-4da5-98a2-d8d3c656e38d]]></Field>
+	<Field name="ILineTrt" type="com.sunopsis.sql.DbInt"><![CDATA[1306]]></Field>
+	<Field name="ITrt" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="IUserExit" type="com.sunopsis.sql.DbInt"><![CDATA[1004]]></Field>
+	<Field name="OrdTrt" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpLineTrtUe">
+		<Field name="GlobalId" type="java.lang.String"><![CDATA[214fc1e1-0bb9-4fb1-bccc-9f54da4c8538]]></Field>
+	<Field name="ILineTrt" type="com.sunopsis.sql.DbInt"><![CDATA[1306]]></Field>
+	<Field name="ITrt" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="IUserExit" type="com.sunopsis.sql.DbInt"><![CDATA[1008]]></Field>
+	<Field name="OrdTrt" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpLineTrtUe">
+		<Field name="GlobalId" type="java.lang.String"><![CDATA[7807b396-354e-410a-89f0-7b2851b088e9]]></Field>
+	<Field name="ILineTrt" type="com.sunopsis.sql.DbInt"><![CDATA[1306]]></Field>
+	<Field name="ITrt" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="IUserExit" type="com.sunopsis.sql.DbInt"><![CDATA[1002]]></Field>
+	<Field name="OrdTrt" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpLineTrtUe">
+		<Field name="GlobalId" type="java.lang.String"><![CDATA[d023b28a-6d06-42be-9133-cd26947eaa79]]></Field>
+	<Field name="ILineTrt" type="com.sunopsis.sql.DbInt"><![CDATA[1306]]></Field>
+	<Field name="ITrt" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="IUserExit" type="com.sunopsis.sql.DbInt"><![CDATA[1003]]></Field>
+	<Field name="OrdTrt" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpLineTrtUe">
+		<Field name="GlobalId" type="java.lang.String"><![CDATA[84b773cf-ad24-42e9-99f6-503b36c3bd3e]]></Field>
+	<Field name="ILineTrt" type="com.sunopsis.sql.DbInt"><![CDATA[1307]]></Field>
+	<Field name="ITrt" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="IUserExit" type="com.sunopsis.sql.DbInt"><![CDATA[1003]]></Field>
+	<Field name="OrdTrt" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpLineTrtUe">
+		<Field name="GlobalId" type="java.lang.String"><![CDATA[b209082b-7016-44cb-9957-1547b2b35778]]></Field>
+	<Field name="ILineTrt" type="com.sunopsis.sql.DbInt"><![CDATA[1307]]></Field>
+	<Field name="ITrt" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="IUserExit" type="com.sunopsis.sql.DbInt"><![CDATA[1008]]></Field>
+	<Field name="OrdTrt" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpLineTrtUe">
+		<Field name="GlobalId" type="java.lang.String"><![CDATA[ec64cac2-d604-40d6-a318-e34311bf68ae]]></Field>
+	<Field name="ILineTrt" type="com.sunopsis.sql.DbInt"><![CDATA[1307]]></Field>
+	<Field name="ITrt" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="IUserExit" type="com.sunopsis.sql.DbInt"><![CDATA[1002]]></Field>
+	<Field name="OrdTrt" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpLineTrtUe">
+		<Field name="GlobalId" type="java.lang.String"><![CDATA[d69ac7df-90d7-4290-8080-c4c5a3b4b692]]></Field>
+	<Field name="ILineTrt" type="com.sunopsis.sql.DbInt"><![CDATA[1307]]></Field>
+	<Field name="ITrt" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="IUserExit" type="com.sunopsis.sql.DbInt"><![CDATA[1004]]></Field>
+	<Field name="OrdTrt" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpLineTrtUe">
+		<Field name="GlobalId" type="java.lang.String"><![CDATA[eb1c1670-7f2f-498a-a3ce-4287aaaf57c0]]></Field>
+	<Field name="ILineTrt" type="com.sunopsis.sql.DbInt"><![CDATA[1308]]></Field>
+	<Field name="ITrt" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="IUserExit" type="com.sunopsis.sql.DbInt"><![CDATA[1004]]></Field>
+	<Field name="OrdTrt" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpLineTrtUe">
+		<Field name="GlobalId" type="java.lang.String"><![CDATA[11fa1b6a-d719-4475-8b94-3ccfc1f0bca7]]></Field>
+	<Field name="ILineTrt" type="com.sunopsis.sql.DbInt"><![CDATA[1309]]></Field>
+	<Field name="ITrt" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="IUserExit" type="com.sunopsis.sql.DbInt"><![CDATA[1002]]></Field>
+	<Field name="OrdTrt" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpLineTrtUe">
+		<Field name="GlobalId" type="java.lang.String"><![CDATA[f1b8aa24-ed84-439b-9ca5-6176ff0ec176]]></Field>
+	<Field name="ILineTrt" type="com.sunopsis.sql.DbInt"><![CDATA[1310]]></Field>
+	<Field name="ITrt" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+	<Field name="IUserExit" type="com.sunopsis.sql.DbInt"><![CDATA[1003]]></Field>
+	<Field name="OrdTrt" type="com.sunopsis.sql.DbInt"><![CDATA[null]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpFKXRef">
+		<Field name="RefKey" type="java.lang.String"><![CDATA[SNP_PROJECT.1]]></Field>
+	<Field name="RefObjGlobalId" type="java.lang.String"><![CDATA[236fd394-6f34-48ff-9081-6e4dd9bea0f8]]></Field>
+ <Field name="RefObjFQName" type="java.lang.String"><![CDATA[DEMO]]></Field>
+ <Field name="RefObjFQType" type="java.lang.String"><![CDATA[SNP_PROJECT]]></Field>
+ <Field name="RefObjFQNameLengths" type="java.lang.String"><![CDATA[4]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpFKXRef">
+		<Field name="RefKey" type="java.lang.String"><![CDATA[SNP_TXTHEADER.2866]]></Field>
+	<Field name="RefObjGlobalId" type="java.lang.String"><![CDATA[93075632-b36a-4d98-b4ae-6a201a8be44a]]></Field>
+ <Field name="RefObjFQName" type="java.lang.String">null</Field>
+ <Field name="RefObjFQType" type="java.lang.String">null</Field>
+ <Field name="RefObjFQNameLengths" type="java.lang.String">null</Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpFKXRef">
+		<Field name="RefKey" type="java.lang.String"><![CDATA[SNP_TRT.218]]></Field>
+	<Field name="RefObjGlobalId" type="java.lang.String"><![CDATA[00baea14-3710-4a3f-9eed-70503a673dba]]></Field>
+ <Field name="RefObjFQName" type="java.lang.String"><![CDATA[DEMO.IKM SQL to Oracle BI Cloud Service]]></Field>
+ <Field name="RefObjFQType" type="java.lang.String"><![CDATA[SNP_PROJECT.SNP_TRT]]></Field>
+ <Field name="RefObjFQNameLengths" type="java.lang.String"><![CDATA[4.34]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpFKXRef">
+		<Field name="RefKey" type="java.lang.String"><![CDATA[SNP_TXTHEADER.2867]]></Field>
+	<Field name="RefObjGlobalId" type="java.lang.String"><![CDATA[b54fe66f-7e9d-44d5-9253-7523da8aef8d]]></Field>
+ <Field name="RefObjFQName" type="java.lang.String">null</Field>
+ <Field name="RefObjFQType" type="java.lang.String">null</Field>
+ <Field name="RefObjFQNameLengths" type="java.lang.String">null</Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpFKXRef">
+		<Field name="RefKey" type="java.lang.String"><![CDATA[SNP_TXTHEADER.2868]]></Field>
+	<Field name="RefObjGlobalId" type="java.lang.String"><![CDATA[61594aa3-e6f7-43ce-8b22-061bfed944a9]]></Field>
+ <Field name="RefObjFQName" type="java.lang.String">null</Field>
+ <Field name="RefObjFQType" type="java.lang.String">null</Field>
+ <Field name="RefObjFQNameLengths" type="java.lang.String">null</Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpFKXRef">
+		<Field name="RefKey" type="java.lang.String"><![CDATA[SNP_ORIGTXT.110]]></Field>
+	<Field name="RefObjGlobalId" type="java.lang.String">null</Field>
+ <Field name="RefObjFQName" type="java.lang.String">null</Field>
+ <Field name="RefObjFQType" type="java.lang.String">null</Field>
+ <Field name="RefObjFQNameLengths" type="java.lang.String">null</Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpFKXRef">
+		<Field name="RefKey" type="java.lang.String"><![CDATA[SNP_TXTHEADER.2869]]></Field>
+	<Field name="RefObjGlobalId" type="java.lang.String"><![CDATA[481de007-49d5-41d3-89d6-336b2af5cef7]]></Field>
+ <Field name="RefObjFQName" type="java.lang.String">null</Field>
+ <Field name="RefObjFQType" type="java.lang.String">null</Field>
+ <Field name="RefObjFQNameLengths" type="java.lang.String">null</Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpFKXRef">
+		<Field name="RefKey" type="java.lang.String"><![CDATA[SNP_TXTHEADER.2870]]></Field>
+	<Field name="RefObjGlobalId" type="java.lang.String"><![CDATA[c89a8cdd-f530-4f02-9205-81321496a687]]></Field>
+ <Field name="RefObjFQName" type="java.lang.String">null</Field>
+ <Field name="RefObjFQType" type="java.lang.String">null</Field>
+ <Field name="RefObjFQNameLengths" type="java.lang.String">null</Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpFKXRef">
+		<Field name="RefKey" type="java.lang.String"><![CDATA[SNP_TXTHEADER.2871]]></Field>
+	<Field name="RefObjGlobalId" type="java.lang.String"><![CDATA[ab8bb98a-8d90-4df8-9713-9e5be10be4ca]]></Field>
+ <Field name="RefObjFQName" type="java.lang.String">null</Field>
+ <Field name="RefObjFQType" type="java.lang.String">null</Field>
+ <Field name="RefObjFQNameLengths" type="java.lang.String">null</Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpFKXRef">
+		<Field name="RefKey" type="java.lang.String"><![CDATA[SNP_TXTHEADER.2872]]></Field>
+	<Field name="RefObjGlobalId" type="java.lang.String"><![CDATA[aa501696-8716-4413-b0cc-46d1e90bf13f]]></Field>
+ <Field name="RefObjFQName" type="java.lang.String">null</Field>
+ <Field name="RefObjFQType" type="java.lang.String">null</Field>
+ <Field name="RefObjFQNameLengths" type="java.lang.String">null</Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpFKXRef">
+		<Field name="RefKey" type="java.lang.String"><![CDATA[SNP_ORIGTXT.103]]></Field>
+	<Field name="RefObjGlobalId" type="java.lang.String">null</Field>
+ <Field name="RefObjFQName" type="java.lang.String">null</Field>
+ <Field name="RefObjFQType" type="java.lang.String">null</Field>
+ <Field name="RefObjFQNameLengths" type="java.lang.String">null</Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpFKXRef">
+		<Field name="RefKey" type="java.lang.String"><![CDATA[SNP_TXTHEADER.2873]]></Field>
+	<Field name="RefObjGlobalId" type="java.lang.String"><![CDATA[e9ee4730-eb96-4b56-ad05-5f6b5fb5af39]]></Field>
+ <Field name="RefObjFQName" type="java.lang.String">null</Field>
+ <Field name="RefObjFQType" type="java.lang.String">null</Field>
+ <Field name="RefObjFQNameLengths" type="java.lang.String">null</Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpFKXRef">
+		<Field name="RefKey" type="java.lang.String"><![CDATA[SNP_TXTHEADER.2874]]></Field>
+	<Field name="RefObjGlobalId" type="java.lang.String"><![CDATA[bf0238ca-1a23-402a-9513-ea9db4e2e64e]]></Field>
+ <Field name="RefObjFQName" type="java.lang.String">null</Field>
+ <Field name="RefObjFQType" type="java.lang.String">null</Field>
+ <Field name="RefObjFQNameLengths" type="java.lang.String">null</Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpFKXRef">
+		<Field name="RefKey" type="java.lang.String"><![CDATA[SNP_ORIGTXT.102]]></Field>
+	<Field name="RefObjGlobalId" type="java.lang.String">null</Field>
+ <Field name="RefObjFQName" type="java.lang.String">null</Field>
+ <Field name="RefObjFQType" type="java.lang.String">null</Field>
+ <Field name="RefObjFQNameLengths" type="java.lang.String">null</Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpFKXRef">
+		<Field name="RefKey" type="java.lang.String"><![CDATA[SNP_TXTHEADER.2875]]></Field>
+	<Field name="RefObjGlobalId" type="java.lang.String"><![CDATA[b05e9d35-4cdf-4f5c-948b-cbb6f48946e4]]></Field>
+ <Field name="RefObjFQName" type="java.lang.String">null</Field>
+ <Field name="RefObjFQType" type="java.lang.String">null</Field>
+ <Field name="RefObjFQNameLengths" type="java.lang.String">null</Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpFKXRef">
+		<Field name="RefKey" type="java.lang.String"><![CDATA[SNP_TXTHEADER.2876]]></Field>
+	<Field name="RefObjGlobalId" type="java.lang.String"><![CDATA[9027ba35-af0a-4910-9a6e-570265c38bf0]]></Field>
+ <Field name="RefObjFQName" type="java.lang.String">null</Field>
+ <Field name="RefObjFQType" type="java.lang.String">null</Field>
+ <Field name="RefObjFQNameLengths" type="java.lang.String">null</Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpFKXRef">
+		<Field name="RefKey" type="java.lang.String"><![CDATA[SNP_USEREXIT.1004]]></Field>
+	<Field name="RefObjGlobalId" type="java.lang.String"><![CDATA[aea800b6-50e4-4457-9843-dd6d491fd00a]]></Field>
+ <Field name="RefObjFQName" type="java.lang.String"><![CDATA[DEMO.IKM SQL to Oracle BI Cloud Service.DROP_TARGET]]></Field>
+ <Field name="RefObjFQType" type="java.lang.String"><![CDATA[SNP_PROJECT.SNP_TRT.SNP_USEREXIT]]></Field>
+ <Field name="RefObjFQNameLengths" type="java.lang.String"><![CDATA[4.34.11]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpFKXRef">
+		<Field name="RefKey" type="java.lang.String"><![CDATA[SNP_LINETRT.1304]]></Field>
+	<Field name="RefObjGlobalId" type="java.lang.String"><![CDATA[ebc2f2ef-9372-4ebc-a7e7-2c79e6fa2bcb]]></Field>
+ <Field name="RefObjFQName" type="java.lang.String"><![CDATA[DEMO.IKM SQL to Oracle BI Cloud Service.Cleanup Journalized Table]]></Field>
+ <Field name="RefObjFQType" type="java.lang.String"><![CDATA[SNP_PROJECT.SNP_TRT.SNP_LINETRT]]></Field>
+ <Field name="RefObjFQNameLengths" type="java.lang.String"><![CDATA[4.34.25]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpFKXRef">
+		<Field name="RefKey" type="java.lang.String"><![CDATA[SNP_USEREXIT.1008]]></Field>
+	<Field name="RefObjGlobalId" type="java.lang.String"><![CDATA[03625c5b-b42c-4da8-985f-67562797cb95]]></Field>
+ <Field name="RefObjFQName" type="java.lang.String"><![CDATA[DEMO.IKM SQL to Oracle BI Cloud Service.REMOVE_DUPLICATES]]></Field>
+ <Field name="RefObjFQType" type="java.lang.String"><![CDATA[SNP_PROJECT.SNP_TRT.SNP_USEREXIT]]></Field>
+ <Field name="RefObjFQNameLengths" type="java.lang.String"><![CDATA[4.34.17]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpFKXRef">
+		<Field name="RefKey" type="java.lang.String"><![CDATA[SNP_USEREXIT.1002]]></Field>
+	<Field name="RefObjGlobalId" type="java.lang.String"><![CDATA[0060e6bc-d792-477d-b05a-d0928c94a4b5]]></Field>
+ <Field name="RefObjFQName" type="java.lang.String"><![CDATA[DEMO.IKM SQL to Oracle BI Cloud Service.TRUNCATE_TARGET_TABLE]]></Field>
+ <Field name="RefObjFQType" type="java.lang.String"><![CDATA[SNP_PROJECT.SNP_TRT.SNP_USEREXIT]]></Field>
+ <Field name="RefObjFQNameLengths" type="java.lang.String"><![CDATA[4.34.21]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpFKXRef">
+		<Field name="RefKey" type="java.lang.String"><![CDATA[SNP_USEREXIT.1003]]></Field>
+	<Field name="RefObjGlobalId" type="java.lang.String"><![CDATA[aab854f2-e14d-45c7-b97d-50e8c70c3322]]></Field>
+ <Field name="RefObjFQName" type="java.lang.String"><![CDATA[DEMO.IKM SQL to Oracle BI Cloud Service.CREATE_TARGET]]></Field>
+ <Field name="RefObjFQType" type="java.lang.String"><![CDATA[SNP_PROJECT.SNP_TRT.SNP_USEREXIT]]></Field>
+ <Field name="RefObjFQNameLengths" type="java.lang.String"><![CDATA[4.34.13]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpFKXRef">
+		<Field name="RefKey" type="java.lang.String"><![CDATA[SNP_LINETRT.1305]]></Field>
+	<Field name="RefObjGlobalId" type="java.lang.String"><![CDATA[b01f112d-749f-4005-8603-955b799d3e3c]]></Field>
+ <Field name="RefObjFQName" type="java.lang.String"><![CDATA[DEMO.IKM SQL to Oracle BI Cloud Service.Prepare for loading]]></Field>
+ <Field name="RefObjFQType" type="java.lang.String"><![CDATA[SNP_PROJECT.SNP_TRT.SNP_LINETRT]]></Field>
+ <Field name="RefObjFQNameLengths" type="java.lang.String"><![CDATA[4.34.19]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpFKXRef">
+		<Field name="RefKey" type="java.lang.String"><![CDATA[SNP_LINETRT.1306]]></Field>
+	<Field name="RefObjGlobalId" type="java.lang.String"><![CDATA[59dcb5c4-1b7c-4dac-823a-259051b6bfc6]]></Field>
+ <Field name="RefObjFQName" type="java.lang.String"><![CDATA[DEMO.IKM SQL to Oracle BI Cloud Service.Load data into Oracle BICS]]></Field>
+ <Field name="RefObjFQType" type="java.lang.String"><![CDATA[SNP_PROJECT.SNP_TRT.SNP_LINETRT]]></Field>
+ <Field name="RefObjFQNameLengths" type="java.lang.String"><![CDATA[4.34.26]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpFKXRef">
+		<Field name="RefKey" type="java.lang.String"><![CDATA[SNP_LINETRT.1307]]></Field>
+	<Field name="RefObjGlobalId" type="java.lang.String"><![CDATA[def8ed52-533b-4eeb-aea0-db610e31b64b]]></Field>
+ <Field name="RefObjFQName" type="java.lang.String"><![CDATA[DEMO.IKM SQL to Oracle BI Cloud Service.Lock Journalized Table]]></Field>
+ <Field name="RefObjFQType" type="java.lang.String"><![CDATA[SNP_PROJECT.SNP_TRT.SNP_LINETRT]]></Field>
+ <Field name="RefObjFQNameLengths" type="java.lang.String"><![CDATA[4.34.22]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpFKXRef">
+		<Field name="RefKey" type="java.lang.String"><![CDATA[SNP_LINETRT.1308]]></Field>
+	<Field name="RefObjGlobalId" type="java.lang.String"><![CDATA[7e24505a-1c4f-4012-b5d6-4d11ca13bed0]]></Field>
+ <Field name="RefObjFQName" type="java.lang.String"><![CDATA[DEMO.IKM SQL to Oracle BI Cloud Service.Drop target]]></Field>
+ <Field name="RefObjFQType" type="java.lang.String"><![CDATA[SNP_PROJECT.SNP_TRT.SNP_LINETRT]]></Field>
+ <Field name="RefObjFQNameLengths" type="java.lang.String"><![CDATA[4.34.11]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpFKXRef">
+		<Field name="RefKey" type="java.lang.String"><![CDATA[SNP_LINETRT.1309]]></Field>
+	<Field name="RefObjGlobalId" type="java.lang.String"><![CDATA[d5e03296-e02f-49a6-a0c5-0f2b8d8678d2]]></Field>
+ <Field name="RefObjFQName" type="java.lang.String"><![CDATA[DEMO.IKM SQL to Oracle BI Cloud Service.Truncate target table]]></Field>
+ <Field name="RefObjFQType" type="java.lang.String"><![CDATA[SNP_PROJECT.SNP_TRT.SNP_LINETRT]]></Field>
+ <Field name="RefObjFQNameLengths" type="java.lang.String"><![CDATA[4.34.21]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.dbobj.SnpFKXRef">
+		<Field name="RefKey" type="java.lang.String"><![CDATA[SNP_LINETRT.1310]]></Field>
+	<Field name="RefObjGlobalId" type="java.lang.String"><![CDATA[32715711-4ae7-4381-9b7c-f583545a4305]]></Field>
+ <Field name="RefObjFQName" type="java.lang.String"><![CDATA[DEMO.IKM SQL to Oracle BI Cloud Service.Create target]]></Field>
+ <Field name="RefObjFQType" type="java.lang.String"><![CDATA[SNP_PROJECT.SNP_TRT.SNP_LINETRT]]></Field>
+ <Field name="RefObjFQNameLengths" type="java.lang.String"><![CDATA[4.34.13]]></Field>
+</Object>
+<Object class="com.sunopsis.dwg.DwgExportSummary">
+		<Field name="ExpTxtNb" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="InstObjNb" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="JoinColNb" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="JoinNb" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="KeyColNb" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="KeyNb" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="LinkDiagNb" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="MorigTxtNb" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="MtxtNb" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="OrigTxtNb" type="com.sunopsis.sql.DbInt"><![CDATA[11]]></Field>
+	<Field name="OtherObjectsNb" type="com.sunopsis.sql.DbInt"><![CDATA[37]]></Field>
+	<Field name="PlanAgentNb" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="StepNb" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="TxtNb" type="com.sunopsis.sql.DbInt"><![CDATA[11]]></Field>
+	<Field name="UeOrigNb" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="UeUsedNb" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="VarPlanAgentNb" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="ScenTxtNb" type="com.sunopsis.sql.DbInt"><![CDATA[0]]></Field>
+	<Field name="OdiVersion" type="java.lang.String"><![CDATA[12.2.1]]></Field>
+	<Field name="OriginRepositoryID" type="com.sunopsis.sql.DbInt"><![CDATA[11]]></Field>
+	<Field name="RepositoryVersion" type="java.lang.String"><![CDATA[05.02.02.09]]></Field>
+</Object>
+</SunopsisExport>
